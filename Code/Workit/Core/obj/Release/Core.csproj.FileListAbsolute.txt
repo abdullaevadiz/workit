@@ -1,0 +1,8 @@
+E:\adizka.me\Code\Workit\Core\bin\Release\Core.dll
+E:\adizka.me\Code\Workit\Core\bin\Release\Core.pdb
+E:\adizka.me\Code\Workit\Core\bin\Release\DAL.dll
+E:\adizka.me\Code\Workit\Core\bin\Release\EntityFramework.dll
+E:\adizka.me\Code\Workit\Core\bin\Release\DAL.pdb
+E:\adizka.me\Code\Workit\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+E:\adizka.me\Code\Workit\Core\obj\Release\Core.dll
+E:\adizka.me\Code\Workit\Core\obj\Release\Core.pdb

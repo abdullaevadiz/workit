@@ -1,0 +1,8 @@
+E:\adizka.me\Code\Workit\DAL\bin\Debug\DAL.dll.config
+E:\adizka.me\Code\Workit\DAL\bin\Debug\DAL.dll
+E:\adizka.me\Code\Workit\DAL\bin\Debug\DAL.pdb
+E:\adizka.me\Code\Workit\DAL\bin\Debug\EntityFramework.dll
+E:\adizka.me\Code\Workit\DAL\bin\Debug\EntityFramework.xml
+E:\adizka.me\Code\Workit\DAL\obj\Debug\DAL.dll
+E:\adizka.me\Code\Workit\DAL\obj\Debug\DAL.pdb
+E:\adizka.me\Code\Workit\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

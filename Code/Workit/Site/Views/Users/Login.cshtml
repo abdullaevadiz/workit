@@ -1,0 +1,29 @@
+﻿@model DAL.Entities.User
+
+@{
+    ViewBag.Title = string.Empty;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="login" method="POST" action="@Site.Current.Home/Users/Login" accept-charset="UTF-8">
+    <h2>Вход</h2>
+    <p>Чтобы зарегистрироваться, просто введите свою почту и пароль.</p>
+    
+    @if (!string.IsNullOrEmpty(ViewBag.Errors))
+    {
+        <div class="error-text">@Html.Raw(ViewBag.Errors)</div>
+    }
+
+    <div>
+        <label for="email">Эл. почта</label>
+        <input   id="email" type="email" size="50" value="@Model.Email" />
+    </div>
+    <div>
+        <label>Пароль</label>
+        <input type="password" id="password" size="50" value="@Model.Password" />
+    </div>
+    <div>
+        <button type="submit">Войти</button>    
+    </div>
+</form>
+

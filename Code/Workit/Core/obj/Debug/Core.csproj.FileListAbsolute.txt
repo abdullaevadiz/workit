@@ -1,0 +1,8 @@
+E:\adizka.me\Code\Workit\Core\bin\Debug\Core.dll
+E:\adizka.me\Code\Workit\Core\bin\Debug\Core.pdb
+E:\adizka.me\Code\Workit\Core\bin\Debug\DAL.dll
+E:\adizka.me\Code\Workit\Core\bin\Debug\EntityFramework.dll
+E:\adizka.me\Code\Workit\Core\bin\Debug\DAL.pdb
+E:\adizka.me\Code\Workit\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\adizka.me\Code\Workit\Core\obj\Debug\Core.dll
+E:\adizka.me\Code\Workit\Core\obj\Debug\Core.pdb

@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="Author" content="Adiz Abdullaev" />
+    
+    <title>@ViewBag.Title workit</title>
+    <link type="text/css" rel="stylesheet" href="@Url.Content("~/Static/CSS/Style.css")"/>
+    <script type="text/javascript" src="@Url.Content("~/Static/Scripts/jquery-1.9.0.min.js")"></script>
+    
+    @RenderSection("Head", required: false)
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <a href="@Site.Current.Home" title="На главную">
+                    
+                </a>
+            </div>
+        </div>
+        <div class="centr">
+            @RenderSection("Search", required:false)
+            <div class="content">@RenderBody()</div>
+            @RenderSection("Sidebar", required:false)
+        </div>
+        <div class="footer">
+            <a href="@Site.Current.Home">workit</a>
+            <a class="footer-author-link" href="http://adizka.me" target="_blank">
+                © 2013 «<strong>adizka.me</strong>»
+            </a>
+        </div>
+    </div>
+</body>
+</html>

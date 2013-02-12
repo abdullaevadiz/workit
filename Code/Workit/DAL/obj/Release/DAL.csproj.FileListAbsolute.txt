@@ -1,0 +1,7 @@
+E:\adizka.me\Code\Workit\DAL\bin\Release\DAL.dll.config
+E:\adizka.me\Code\Workit\DAL\bin\Release\DAL.dll
+E:\adizka.me\Code\Workit\DAL\bin\Release\DAL.pdb
+E:\adizka.me\Code\Workit\DAL\bin\Release\EntityFramework.dll
+E:\adizka.me\Code\Workit\DAL\bin\Release\EntityFramework.xml
+E:\adizka.me\Code\Workit\DAL\obj\Release\DAL.dll
+E:\adizka.me\Code\Workit\DAL\obj\Release\DAL.pdb
