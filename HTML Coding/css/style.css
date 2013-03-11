@@ -1,0 +1,646 @@
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('../fonts/roboto-medium.eot');
+    src: url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-size: 100%;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+table {
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;		
+} 
+input, select, button, textarea {
+	margin: 0; 				
+	font-size: 100%; 			
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				
+}
+input[type="checkbox"] { 		
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+
+body {
+	line-height: 1;
+	text-align: left;
+	font: 14px "PTZ55F-regular", Arial;
+	color:#273424;
+	background:url("images/gen-bg.png");
+}
+
+body, html {
+	height: 100%;
+}
+
+input, select, button, textarea {
+	font: 13px "Calibri", sans-serif, Arial;
+}
+input[type="button"], input[type="submit"], button {
+	cursor: pointer;
+}
+
+/* --------------- /базовые настройки ---------*/
+
+button::-moz-focus-inner {
+	padding: 0px; 
+	border-width: 0px;
+}
+
+h1 {
+	margin: 0px 0px 10px 0px;
+	font-weight: normal;
+	font:20px Arial;
+	color: #000000;
+	margin:0 0 0 0;
+}
+
+h2 {
+	margin: 20px 0 ;
+	font-weight: normal;
+	font:22px "PTF75F-bold", Arial;
+}	
+	
+h3 {
+	margin: 0px 0px 10px 0px;
+	font-weight: normal;
+	font-size: 14px;
+}	
+	
+h4 {
+	
+}	
+	
+img {
+	border: 0;
+}	
+
+* {
+	outline: none;
+}
+
+a {color: #2a7acc;text-decoration: underline;}
+
+a:hover {text-decoration: none;}	
+:focus        {outline:0;}
+
+body{
+	background:url("../images/main-bg.png");
+}
+
+.main{
+	width:925px;
+	margin:0 auto;
+	color:#4d4d4d;
+	font:12px "Segoe UI", Arial;
+}
+
+.top-block-header{
+	position:relative;
+	height:69px;
+}
+
+.defoult-buttons{
+	position:absolute;
+	right:0;top:21px;
+	font:14px "Segoe UI", Arial;
+	text-shadow:1px 1px 1px #545556;
+}
+
+.logo{
+	position:absolute;
+	left:0;top:22px;
+}
+
+.add-vacancy{
+	display:inline-block;
+	*dislay:inline;
+	zoom:1;
+	margin:0 27px 0 0;
+}
+
+.add-vacancy a{
+	display:block;
+	background:url("../images/ellow-but.png") repeat-x;
+	height:26px;
+	padding:0 14px;
+	color:#ffffff;
+	text-decoration:none;
+	border-radius:3px;
+	box-shadow:1px 1px 2px #8e8e8e;
+	line-height:24px;
+}
+
+.login{
+	display:inline-block;
+	*dislay:inline;
+	zoom:1;
+}
+
+.login a{
+	text-decoration:none;
+	display:block;
+	background:url("../images/blue-but.png") repeat-x;
+	height:26px;
+	line-height:24px;	
+	color:#ffffff;
+	text-decoration:none;
+	border-radius:3px;
+	box-shadow:1px 1px 2px #8e8e8e;
+	letter-spacing:-3px;
+}
+
+.login a span{
+	display:inline-block;
+	*dislay:inline;
+	zoom:1;
+	border-left:1px solid #98d0d6;
+	letter-spacing:0;
+	padding:0 14px 0 10px;
+	height:100%;
+}
+
+.login a span:first-child{
+	border-left:none;
+	border-right:1px solid #68bac3;	
+}
+
+.bottom-block-header{
+	height:100px;
+	background:url("../images/toolbar-bg.png") no-repeat;
+	position:relative;
+}
+
+.inner-text-search{
+	border:1px solid #64cfd9;
+	overflow:hidden;
+	height:25px;
+}
+
+.text-search{
+	border:3px solid #8ddce3;
+	border-radius:3px;
+	background:#ffffff;	
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:middle;
+}
+
+.but-search{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:middle;
+}
+
+.serch{
+	position:absolute;
+	left:60px;top:34px;
+}
+
+.heart{
+	width:16px;
+	height:14px;
+	background:url("../images/heart.png") no-repeat;
+	float:left;
+	border-right:1px solid #b9b9b9;
+	margin:5px 0 0 9px;
+	padding:0 5px 0 0;
+}
+
+.inner-text-search input[type="text"]{
+	border:none;
+	float:left;
+	padding:3px 5px;
+	width:220px;
+}
+
+.but-search input[type="submit"]{
+	background:url("../images/search-but.png") no-repeat;
+	border:none;
+}
+
+.choice-employment{
+	color:#ffffff;
+	position:absolute;
+	right:70px;top:39px;
+}
+
+.choice-employment input[type="checkbox"]{
+	margin:0 12px 0 0;
+	border:1px solid #567497;
+}
+
+.choice-employment label{
+	margin:0 0 0 20px
+}
+
+.choice-employment form label:first-child{
+	margin:0;
+}
+
+.clear{
+	clear:both;
+}
+
+.content{
+	width:626px;
+	padding:0 10px;
+	float:left;	
+}
+
+.center{
+	background:#ffffff;
+	padding:10px 0;	
+}
+
+.list-developers{
+	position:relative;
+}
+
+.list-developers ul li{
+	list-style-type:none;
+	letter-spacing:-3px;
+	padding:19px 23px;
+	overflow:hidden;
+	margin:0 0 1px 0;
+}
+
+.list-developers ul li > div{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:middle;
+	letter-spacing:0;
+}
+
+.arm{
+	margin:0 68px 0 0;
+}
+
+.arm a{ 
+	display:block;
+	background:url("../images/arm.png") no-repeat;
+	width:42px;
+	height:42px;
+}
+
+.photo-developer{
+	width:88px;
+	margin:0 33px 0 0;
+}
+
+.company-name{
+	width:242px;
+	margin:0 5px 0 0;
+}
+
+.location-company{
+	background:url("../images/location.png") no-repeat 0 50%;
+	padding:0 0 0 26px;
+	font:14px "roboto-medium", Arial;
+	min-height:19px;	
+}
+
+.company-name{
+	font:14px "roboto-medium", Arial;
+	color:#777777;
+}
+
+.company-name div{
+	font-size:18px;
+	color:#434343;
+}
+
+.wrapper{
+	padding:0 0 100px 0;
+}
+
+.more-results{
+	position:absolute;
+	bottom:-50px;right:192px;
+}
+
+.more-results a{
+	display:block;
+	background:url("../images/blue-but.png") repeat-x;
+	height:26px;
+	color:#ffffff;
+	text-decoration:none;	
+	font:bold 14px/24px "Segoe UI", Arial;
+	text-transform:uppercase;
+	width:98px;
+	text-align:center;
+	border-radius:3px;
+	box-shadow: 1px 1px 2px #8E8E8E;	
+}
+
+.sidebar{
+	float:right;
+	width:233px;
+	margin:0 23px 0 0;
+}
+
+.one-soc-work{
+	overflow:hidden;
+	height:26px;
+	background:url("../images/soc-work-bg.png") repeat-x 0 100%;
+	border-bottom:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;	
+	border-radius:3px;
+	margin:0 0 17px 0;
+}
+
+.soc-works{
+	margin:0 0 26px 0;
+}
+
+.img-soc-bg{
+	float:left;
+	margin:0 11px 0 0;
+}
+
+.img-soc-bg img{
+	display:block;
+}
+
+.mane-soc-work{
+	float:left;
+	color:#535353;
+	font: 12px/26px "Segoe UI", Arial;
+}
+
+.mane-soc-work span{
+	font-weight:bold;
+}
+
+.number-soc-work{
+	float:right;
+	height:100%;
+	padding:0 12px;
+	background:#ffffff;
+	border-top:1px solid #d9d9d9;
+	border-left:1px solid #d9d9d9;		
+	font:bold 12px/26px "Segoe UI", Arial;
+	color:#535353;
+}
+
+.instruction-post-jobs{
+	font-size:12px;
+	line-height:15px;
+	margin:0 0 36px 0;
+}
+
+.title-post-jobs{
+	text-align:center;
+	font-size:15px;
+	font-style:italic;
+	margin:0 0 19px 0;	
+}
+
+.content-subscription p{
+	margin:0 0 20px 0;
+}
+
+.title-subscription{
+	font:bold 12px "Segoe UI", Arial;	
+	text-transform:uppercase;
+	margin:0 0 12px 0;
+}
+
+.button-subscription{
+	margin:0 0 20px 0;
+}
+
+.subscription{
+	background:url("../images/gorizontal-line-bg.png") repeat-x;
+	position:relative;
+	padding:10px 0 0;
+	border:1px solid #e7e7e7;
+	margin:0 0 30px 0;
+}
+
+.subscription:after{
+	content:".";
+	bottom:0;left:0;
+	height:10px;
+	width:100%;
+	background:url("../images/gorizontal-line-bg.png") repeat-x;
+	display:block;
+	line-height:100px;
+	overflow:hidden;
+}
+
+.content-subscription{
+	background:url("../images/vartical-line-bg.png") repeat-y #f3f3f3;
+	position:relative;
+	padding:10px 28px;
+}
+
+.content-subscription:after{
+	content:".";
+	top:0;right:0;
+	width:10px;
+	height:100%;
+	background:url("../images/vartical-line-bg.png") repeat-y;
+	display:block;
+	letter-spacing:100px;
+	overflow:hidden;
+	position:absolute;
+	color:#ffffff;
+}
+
+.button-subscription{
+	text-align:center;
+}
+
+.button-subscription a{
+	display:inline-block;
+	*display:inline;
+	zoom:1;	
+	background: url("../images/ellow-but.png") repeat-x scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 2px #8E8E8E;
+    color: #FFFFFF;
+    height: 26px;
+    line-height: 24px;
+    padding: 0 26px;
+    text-decoration: none;
+}
+
+.about-text{
+	padding:10px;
+	background:#ffffff;
+	border:1px solid #e7e7e7;	
+}
+
+.in-about-text{
+	background:#f3f3f3;
+	padding:10px 15px;
+}
+
+#footer{
+	background:url("../images/footer-bg.png");	
+	height:70px;
+}
+
+.footer{
+	
+	text-align:center;
+	color:#333333;	
+	padding:26px 0 0 0;
+}
+
+.footer-logo, .copyright{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:top;	
+}
+
+.popap{
+	width:372px;
+	border:12px solid #e9e9e9;
+	background:#ffffff;
+	padding:0 0 32px 0;
+}
+
+.title-popap{
+	font:bold 14px "Segoe UI", Arial;
+	text-align:center;
+	padding:18px 0;
+}
+
+.popap p{
+	text-align:center;
+	margin:0 0 12px 0;
+}
+
+.wrap-input{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #8DDCE3;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    vertical-align: middle;
+	margin:0 0 10px 0;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+
+.inner-input{
+	border: 1px solid #64CFD9;
+    height: 25px;
+    overflow: hidden;
+}
+
+.separator{	
+    border-right: 1px solid #B9B9B9;
+    float: left;
+    height: 14px;
+    margin: 5px 0 0 0; 
+    width: 10px;
+}
+
+
+.inner-input input[type="text"], .inner-input input[type="password"] {
+    border: medium none;
+    float: left;
+    padding: 3px 5px;
+    width: 220px;
+}
+
+.popap form{
+	text-align:center;
+}
+
+.popap form input[type="submit"]{
+	background: url("../images/submit-button.png") repeat-x scroll 0 0 transparent;    
+	border:none;
+    display:inline-block;
+	*display:inline;
+	zoom:1;
+	height:28px;
+	width:161px;	
+	margin:14px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
