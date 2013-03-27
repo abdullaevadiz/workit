@@ -98,9 +98,7 @@ h1 {
 }
 
 h2 {
-	margin: 20px 0 ;
-	font-weight: normal;
-	font:22px "PTF75F-bold", Arial;
+	font: bold 14px "Segoe UI",Arial;
 }	
 	
 h3 {
@@ -131,7 +129,7 @@ body{
 }
 
 .main{
-	width:925px;
+	width:923px;
 	margin:0 auto;
 	color:#4d4d4d;
 	font:12px "Segoe UI", Arial;
@@ -140,6 +138,7 @@ body{
 .top-block-header{
 	position:relative;
 	height:69px;
+	background:url("../images/header-bg.png") no-repeat center 0;
 }
 
 .defoult-buttons{
@@ -147,18 +146,18 @@ body{
 	right:0;top:21px;
 	font:14px "Segoe UI", Arial;
 	text-shadow:1px 1px 1px #545556;
+	*width:356px;
 }
 
 .logo{
 	position:absolute;
-	left:0;top:22px;
+	left:0;top:22px;	
 }
 
 .add-vacancy{
-	display:inline-block;
-	*dislay:inline;
-	zoom:1;
+	float:left;
 	margin:0 27px 0 0;
+	width:156px;
 }
 
 .add-vacancy a{
@@ -174,9 +173,8 @@ body{
 }
 
 .login{
-	display:inline-block;
-	*dislay:inline;
-	zoom:1;
+	float:right;
+	
 }
 
 .login a{
@@ -261,6 +259,9 @@ body{
 .but-search input[type="submit"]{
 	background:url("../images/search-but.png") no-repeat;
 	border:none;
+	display:block;
+	width:20px;
+	height:20px;
 }
 
 .choice-employment{
@@ -272,29 +273,40 @@ body{
 .choice-employment input[type="checkbox"]{
 	margin:0 12px 0 0;
 	border:1px solid #567497;
+	border:none;
 }
 
 .choice-employment label{
-	margin:0 0 0 20px
+	margin:0 0 0 20px;
+	line-height:19px \0;
+	line-height:19px \0/;
+	*line-height:19px;
+}
+
+.choice-employment label span{
+	*line-height:19px;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
 }
 
 .choice-employment form label:first-child{
 	margin:0;
 }
 
-.clear{
-	clear:both;
-}
+.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+.clearfix{zoom:1}
 
 .content{
 	width:626px;
-	padding:0 10px;
-	float:left;	
+	padding:10px 10px 25px 10px;
+	float:left;		
+	*background:#ffffff;
 }
 
 .center{
 	background:#ffffff;
-	padding:10px 0;	
+	position:relative;	
 }
 
 .list-developers{
@@ -309,6 +321,10 @@ body{
 	margin:0 0 1px 0;
 }
 
+.list-developers ul li:hover{
+	background:#f9f2de !important;
+}
+
 .list-developers ul li > div{
 	display:inline-block;
 	*display:inline;
@@ -318,7 +334,7 @@ body{
 }
 
 .arm{
-	margin:0 68px 0 0;
+	margin:0 50px 0 0;
 }
 
 .arm a{ 
@@ -342,7 +358,8 @@ body{
 	background:url("../images/location.png") no-repeat 0 50%;
 	padding:0 0 0 26px;
 	font:14px "roboto-medium", Arial;
-	min-height:19px;	
+	min-height:19px;
+	width:66px;	
 }
 
 .company-name{
@@ -361,7 +378,7 @@ body{
 
 .more-results{
 	position:absolute;
-	bottom:-50px;right:192px;
+	bottom:-76px;right:192px;
 }
 
 .more-results a{
@@ -382,6 +399,9 @@ body{
 	float:right;
 	width:233px;
 	margin:0 23px 0 0;
+	border-left:1px solid #cccccc;
+	padding:10px 0 25px 15px;
+	*background:#ffffff;
 }
 
 .one-soc-work{
@@ -392,6 +412,16 @@ body{
 	border-right:1px solid #d9d9d9;	
 	border-radius:3px;
 	margin:0 0 17px 0;
+}
+
+.one-soc-work a{
+	cursor:pointer;
+}
+
+.one-soc-work span{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
 }
 
 .soc-works{
@@ -461,6 +491,19 @@ body{
 	padding:10px 0 0;
 	border:1px solid #e7e7e7;
 	margin:0 0 30px 0;
+	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<div class="after"></div>'));
+}
+
+.subscription .after{
+	position:absolute;
+	bottom:0;left:0;
+	height:10px;
+	width:100%;
+	background:url("../images/gorizontal-line-bg.png") repeat-x;
+	display:block;
+	line-height:100px;
+	overflow:hidden;
+	z-index:5;
 }
 
 .subscription:after{
@@ -478,6 +521,19 @@ body{
 	background:url("../images/vartical-line-bg.png") repeat-y #f3f3f3;
 	position:relative;
 	padding:10px 28px;
+	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<div class="before"></div>'));
+}
+
+.content-subscription .before{
+	top:0;right:0;
+	width:10px;
+	height:100%;
+	background:url("../images/vartical-line-bg.png") repeat-y;
+	display:block;
+	letter-spacing:100px;
+	overflow:hidden;
+	position:absolute;
+	color:#ffffff;
 }
 
 .content-subscription:after{
@@ -539,6 +595,7 @@ body{
 	*display:inline;
 	zoom:1;
 	vertical-align:top;	
+	line-height:13px;
 }
 
 .popap{
@@ -608,12 +665,324 @@ body{
 	margin:14px 0 0 0;
 }
 
+.title-page h1{	
+	text-align:center;
+	font:bold 14px "Segoe UI", Arial;
+	color:#393939;
+}
 
+.title-page{
+	padding:18px 0 7px 0;
+	border-bottom:1px solid #b2b2b2;
+	margin:0 0 18px 0;
+}
 
+.border{
+	width:1px;
+	background:#b2b2b2;
+	height:100%;
+	position:absolute;
+	right:278px;top:0;	
+}
 
+.date-table table{
+	width:100%;
+}
 
+.date-table table tr td{
+	text-align:center;
+	vertical-align:middle;	
+	font:14px "roboto-medium", Arial;
+	color:#525252;
+}
 
+.date-table .location-company{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
 
+.date-table .arm{
+	margin:0;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	background: url("../images/arm.png") no-repeat scroll 0 0 transparent;
+    height: 42px;
+	padding:0 0 0 48px;
+	font:14px "Segoe UI", Arial;
+	color:#525252;
+}
+
+.date-table .arm span{
+	line-height:39px;
+}
+
+.frontend{
+	background:url("../images/frontent.png") no-repeat 0 50%;
+	padding:0 0 0 25px;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+
+.beckend{
+	background:url("../images/backend.png") no-repeat 0 50%;
+	padding:0 0 0 25px;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+
+.full-info{
+	padding:0 15px;
+}
+
+.date-table table tr td{
+	width:183px;
+}
+
+.interface{
+	width:142px !important;
+	text-align:left !important;
+}
+
+.date-table{
+	margin:0 0 46px 0;
+}
+
+.employer-information{
+	width:160px;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:top;
+	margin:0 44px 0 0;
+}
+
+.photo-company{
+	width:160px;
+	height:146px;
+	background:#e1e1e1;
+	margin:0 0 10px 0;
+}
+
+.name-company{
+	font:bold 14px "Segoe UI", Arial;
+	margin:0 0 10px 0;
+}
+
+.text-company{
+	margin:0 0 10px 0;
+}
+
+.link-company a{
+	font:bold 14px "Segoe UI", Arial;
+}
+
+.text-proposal{
+	width:361px;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:top;
+}
+
+.bold{
+	font:bold 14px "Segoe UI", Arial;
+}
+
+.text-proposal p{
+	text-indent:35px;
+}
+
+.button-respond, .share-social{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:middle;
+	margin:0 50px 0 0;
+}
+
+.share-social ul li{
+	list-style-type:none;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:top;
+}
+
+.respond{
+	text-align:center;
+	margin:29px 0 0 0;
+}
+
+.button-respond a{
+	display:block;
+	width:204px;
+	text-align:center;
+	color:#ffffff;
+	background:url("../images/red-button.png") repeat-x;
+	font-size:14px;
+	text-decoration:none;
+	padding:2px 0 4px;
+	border-radius:4px;
+	box-shadow:1px 1px 2px #a5a5a5;
+}
+
+.button-respond a:hover{
+	text-decoration:underline;
+}
+
+.share-social{
+	color:#393939;
+}
+
+.share-social ul li:first-child{
+	margin:0 5px 0 0;
+	line-height:14px;
+}
+
+.content-full-info{
+	border-bottom:1px solid #b2b2b2;
+	padding:0 10px 28px 10px;
+	margin:0 0 20px 0;
+}
+
+.title-instruction{
+	font-size:14px;
+	margin:0 0 15px 0;
+}
+
+.instruction{
+	padding:0 10px;
+}
+
+.one-category{
+	border-bottom:1px solid #ececec;	
+	display:block;
+	padding:11px 21px;
+	overflow:hidden;
+}
+
+.name-category{
+	margin:0 0 0 21px;
+	float:left;
+	line-height:11px;
+}
+
+.one-category input[type="checkbox"]{
+	float:right;
+}
+
+.img-category{
+	float:left;
+	height:13px;
+}
+
+.email-user{
+	text-align:center;
+	margin:0 0 27px;
+}
+
+.email-user .heart{
+	background:none !important;
+	margin:5px 0 0 2px !important;
+	width:0 !important;
+}
+
+.list-category{
+	margin:0 0 60px 0;
+}
+
+.button-subscription input[type="submit"]{
+	display:inline-block;
+	*display:inline;
+	zoom:1;	
+	background: url("../images/ellow-but.png") repeat-x scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 2px #8E8E8E;
+    color: #FFFFFF;
+    padding: 3px 26px 4px;
+    text-decoration: none;
+	border:none;
+}
+
+.add-vacancy-page{
+	position:relative;
+}
+
+.add-vacancy-page table{
+	width:100%;
+}
+
+.add-vacancy-page table tr td{
+	text-align:right;
+	padding:0 0 27px 0;
+}
+
+.add-vacancy-page table tr td:first-child{
+	text-align:left;
+}
+
+.add-vacancy-page input[type="text"]{
+	width:252px;
+	padding:4px 5px;
+}
+
+.add-vacancy-page textarea{
+	padding:5px;
+	width:322px;
+	height:105px;
+	resize:vertical;
+}
+
+.out-border{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #8DDCE3;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inner-border{
+	border: 1px solid #64CFD9;    
+    overflow: hidden;
+}
+
+.add-vacancy-page table tr td label{
+	margin:0 0 0 26px;
+}
+
+select option{
+	padding:3px !important;
+}
+
+.button-add-vacancy{
+	position:absolute;
+	bottom:-14%;right:163px;
+}
+
+.button-add-vacancy input[type="submit"]{
+	background: url("../images/ellow-but.png") repeat-x scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 2px #8E8E8E;
+    color: #FFFFFF;
+    padding: 3px 26px;
+    text-decoration: none;
+	border:none;
+}
+
+.status{	
+    font: 14px "roboto-medium",Arial;
+    min-height: 19px;   
+	width:100px;
+}
+
+.status img{
+	vertical-align:middle;
+	margin:0 2px 0 0;
+}
 
 
 

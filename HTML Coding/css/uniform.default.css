@@ -83,11 +83,10 @@ textarea.uniform:focus {
 div.selector {
   background-position: -483px -130px;
   line-height: 26px;
-  height: 26px;
 }
 
 div.selector span {
-  background-position: right 0px;
+  background:url("../images/select-arrow.png") no-repeat 241px 50%;
   height: 26px;
   line-height: 26px;
 }
@@ -98,7 +97,7 @@ div.selector select {
   left: 0px;
 }
 
-div.selector:active, 
+/* div.selector:active, 
 div.selector.active {
   background-position: -483px -156px;
 }
@@ -114,9 +113,9 @@ div.selector.focus, div.selector.hover, div.selector:hover {
 
 div.selector.focus span, div.selector.hover span, div.selector:hover span {
   background-position: right -52px;
-}
+} */
 
-div.selector.focus:active,
+/* div.selector.focus:active,
 div.selector.focus.active,
 div.selector:hover:active,
 div.selector.active:hover {
@@ -136,7 +135,7 @@ div.selector.disabled {
 
 div.selector.disabled span {
   background-position: right -104px;
-}
+} */
 
 /* Checkbox */
 
@@ -353,7 +352,7 @@ div.button span {
 
 /* Select */
 div.selector {
-  width: 190px;
+  width: 262px;
   font-size: 12px;
 }
 
@@ -365,7 +364,7 @@ div.selector select {
 }
 
 div.selector span {
-  padding: 0px 25px 0px 2px;
+  padding: 0px 25px 0px 5px;
   cursor: pointer;
 }
 
@@ -373,6 +372,7 @@ div.selector span {
   color: #666;
   width: 158px;
   text-shadow: 0 1px 0 #fff;
+  width:230px;
 }
 
 div.selector.disabled span {
@@ -406,7 +406,7 @@ div.uploader span.action {
 
 div.uploader span.filename {
   color: #777;
-  width: 226px;
+  width: 215px;
   font-size: 11px;
   border:1px solid #cecece;
   border-radius:4px;
@@ -472,8 +472,13 @@ div.button span {
 
 div.selector {
   position: relative;
-  padding-left: 10px;
   overflow: hidden;
+  background: none repeat scroll 0 0 #FFFFFF;
+	border: 3px solid #8DDCE3;
+	border-radius: 3px 3px 3px 3px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align:left;
 }
 
 div.selector span {
@@ -481,6 +486,8 @@ div.selector span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  border: 1px solid #64CFD9;    
+  overflow: hidden;
 }
 
 div.selector select {
@@ -490,6 +497,7 @@ div.selector select {
   height: 25px;
   border: none;
   background: none;
+  width:262px;
 }
 
 /* Checker */
@@ -537,7 +545,7 @@ div.uploader {
 	position: relative;
 	overflow: hidden;
 	cursor: default;
-	width:309px;		
+	width:298px;		
 	margin:0 0 10px 0;
 }
 
@@ -547,19 +555,23 @@ div.uploader span.action {
   padding: 2px 0px;
   overflow: hidden;
   cursor: pointer;
-  background:url("../images/file-bg.png") no-repeat;
+  background:url("../images/brouse-button.png") no-repeat;
   line-height:100px;
   margin:0 0 0 -5px;
 }
 
 div.uploader span.filename {
-  padding: 6px;
+  padding: 4px 4px 3px;
   float: left;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: default;
+  border: 3px solid #8DDCE3;
+  border-radius: 3px 3px 3px 3px;
+  line-height:16px;
+  text-align:left;
 }
 
 div.uploader input {

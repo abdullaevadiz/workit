@@ -10,7 +10,7 @@ eval(function(a){a.uniform={options:{selectClass:"selector",radioClass:"radio",c
 $(document).ready(function() {							
 	
 	//uniform
-	$(".login-popap :checkbox, :file").uniform({fileDefaultText: 'Фото'});
+	$(".login-popap :checkbox, :file, select").uniform({fileDefaultText: ''});
 
 		
 	// Popup
@@ -20,6 +20,7 @@ $(document).ready(function() {
 		'overlayOpacity'	: 0.9	
 	});
 	
+	$(".list-developers ul li:nth-child(odd)").css("background","#f3f3f3");
 	
 
 	
