@@ -1,0 +1,208 @@
+/* line 3, ../sass/style-workit.scss */
+ABBR, ARTICLE, ASIDE, AUDIO, BB, CANVAS, DATAGRID, DATALIST, DETAILS, DIALOG, FIGURE, FOOTER, HEADER, MARK, MENU, METER, NAV, OUTPUT, PROGRESS, SECTION, TIME, VIDEO {
+  display: block;
+}
+
+/* line 7, ../sass/style-workit.scss */
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
+BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN,
+EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP,
+TT, VAR, HR, B, U, I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM,
+LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+/* line 18, ../sass/style-workit.scss */
+:focus {
+  outline: none;
+}
+
+/* line 20, ../sass/style-workit.scss */
+.clearfix {
+  display: inline-block;
+}
+/* line 22, ../sass/style-workit.scss */
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 33, ../sass/style-workit.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 37, ../sass/style-workit.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 41, ../sass/style-workit.scss */
+.hidden {
+  display: none;
+}
+
+/* line 43, ../sass/style-workit.scss */
+INPUT[type='submit']::-moz-focus-inner,
+INPUT[type='button']::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 48, ../sass/style-workit.scss */
+INPUT {
+  outline: none;
+}
+
+/* line 50, ../sass/style-workit.scss */
+H1, H2, H3, H4, H5, H6 {
+  font-weight: normal;
+}
+
+/* line 52, ../sass/style-workit.scss */
+IMG {
+  vertical-align: top;
+}
+
+/**
+ * Body basic formatting
+ *
+ * Font-size, main color, links (hover, visited etc.)
+ *
+ * @section basic formatting
+ */
+/* GLOBAL STYLES */
+/* line 93, ../sass/style-workit.scss */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 7px 4px;
+  color: white !important;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #797878;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 1px 1px 2px #444343;
+  -moz-box-shadow: 1px 1px 2px #444343;
+  -webkit-box-shadow: 1px 1px 2px #444343;
+}
+/* line 104, ../sass/style-workit.scss */
+.btn:hover {
+  cursor: pointer;
+}
+
+/* line 107, ../sass/style-workit.scss */
+.btn_yellow {
+  background: url("../img/vertical-sprite.png") repeat-x 0 0;
+}
+
+/* line 111, ../sass/style-workit.scss */
+.btn_blue {
+  background: url("../img/vertical-sprite.png") repeat-x 0 -44px;
+}
+
+/* line 115, ../sass/style-workit.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* GLOBAL STYLES */
+/* BODY */
+/* line 120, ../sass/style-workit.scss */
+BODY {
+  background: url("../img/bg.png") repeat 0 0;
+}
+
+/* wrapper */
+/* line 125, ../sass/style-workit.scss */
+.wrapper, .footer {
+  margin: 0 auto;
+  width: 923px;
+}
+
+/* header */
+/* line 131, ../sass/style-workit.scss */
+HEADER {
+  margin-top: 23px;
+}
+
+/* header__top */
+/* line 134, ../sass/style-workit.scss */
+.header__top {
+  overflow: hidden;
+}
+
+/* line 136, ../sass/style-workit.scss */
+.logo {
+  float: left;
+}
+
+/* line 140, ../sass/style-workit.scss */
+.logo A {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 145, ../sass/style-workit.scss */
+.header__top_buttons {
+  float: right;
+  margin-right: 4px;
+}
+
+/* line 150, ../sass/style-workit.scss */
+.login, .registration {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px 3px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 157, ../sass/style-workit.scss */
+.registration {
+  background: url("../img/buttons-border.png") repeat-y 0 0;
+}
+
+/* header__middle */
+/* line 164, ../sass/style-workit.scss */
+.header__middle {
+  background: black;
+}
+
+/* line 168, ../sass/style-workit.scss */
+.header__middle_search {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 170, ../sass/style-workit.scss */
+.header__middle_search input {
+  background: url("../img/search_icon.png") no-repeat 0 0;
+}
+
+/* line 175, ../sass/style-workit.scss */
+.header__middle_search_btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 38px;
+  height: 30px;
+  background: url("../img/search_button.png") no-repeat 0 0;
+}
+
+/* line 182, ../sass/style-workit.scss */
+.header__middle_checkbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* footer */

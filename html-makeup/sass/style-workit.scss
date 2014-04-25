@@ -1,0 +1,189 @@
+@import "compass/css3";
+
+ABBR, ARTICLE, ASIDE, AUDIO, BB, CANVAS, DATAGRID, DATALIST, DETAILS, DIALOG, FIGURE, FOOTER, HEADER, MARK, MENU, METER, NAV, OUTPUT, PROGRESS, SECTION, TIME, VIDEO {
+    display: block;
+    }
+
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
+BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN,
+EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP,
+TT, VAR, HR, B, U, I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM,
+LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    }
+
+:focus { outline: none; }
+
+.clearfix {
+    display: inline-block;
+    &:after {
+        content: ".";
+        clear: both;
+        display: block;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        }
+    }
+
+html[xmlns] .clearfix {
+    display: block;
+    }
+
+* html .clearfix {
+    height: 1%;
+    }
+
+.hidden { display: none; }
+
+INPUT[type='submit']::-moz-focus-inner,
+INPUT[type='button']::-moz-focus-inner {
+    border: 0;
+    }
+
+INPUT { outline: none; }
+
+H1, H2, H3, H4, H5, H6 { font-weight: normal; }
+
+IMG { vertical-align: top; }
+
+/**
+ * Body basic formatting
+ *
+ * Font-size, main color, links (hover, visited etc.)
+ *
+ * @section basic formatting
+ */
+
+$imgPath:'../img/';
+
+@mixin border-radius($count){
+    border-radius: $count;
+    -moz-border-radius: $count;
+    -webkit-border-radius: $count;
+    }
+
+@mixin box-shadow($left, $down, $saturation, $color){
+    box-shadow: $left $down $saturation $color;
+    -moz-box-shadow: $left $down $saturation $color;
+    -webkit-box-shadow: $left $down $saturation $color;
+    }
+
+@mixin disp-in-block-top {
+    display: inline-block;
+    vertical-align: top;
+    }
+
+@mixin disp-in-block-mid {
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+@mixin disp-in-block-btm {
+    display: inline-block;
+    vertical-align: bottom;
+    }
+
+/* GLOBAL STYLES */
+
+.btn {
+    @include disp-in-block-mid;
+    padding: 0 7px 4px;
+    color: white !important;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #797878;
+    border: none;
+    text-decoration: none;
+    @include border-radius(4px);
+    @include box-shadow(1px, 1px, 2px, #444343);
+    &:hover { cursor: pointer; }
+    }
+
+.btn_yellow {
+    background: url($imgPath + "vertical-sprite.png") repeat-x 0 0;
+    }
+
+.btn_blue {
+    background: url($imgPath + "vertical-sprite.png") repeat-x 0 -44px;
+    }
+
+.no-padding { padding: 0; }
+
+/* GLOBAL STYLES */
+
+/* BODY */
+BODY {
+    background: url($imgPath + 'bg.png') repeat 0 0;
+    }
+
+    /* wrapper */
+    .wrapper {
+        margin: 0 auto;
+        width: 923px;
+        }
+
+        /* header */
+        HEADER {margin-top: 23px;}
+
+            /* header__top */
+            .header__top {overflow: hidden;}
+
+                .logo {
+                    float: left;
+                    }
+
+                    .logo A {
+                        display: block;
+                        text-decoration: none;
+                        }
+
+                .header__top_buttons {
+                    float: right;
+                    margin-right: 4px;
+                    }
+
+                    .login {
+                        @include disp-in-block-mid;
+                        padding: 0 10px 3px;
+                        color: white;
+                        text-decoration: none;
+                        }
+
+                    .registration {
+                        @extend .login;
+                        background: url($imgPath + "buttons-border.png") repeat-y 0 0;
+                        }
+
+
+            /* header__middle */
+            .header__middle {
+                background: black;
+                }
+
+                .header__middle_search {
+                    @include disp-in-block-mid;
+                    input {
+                        background: url($imgPath + "search_icon.png") no-repeat 0 0;
+                        }
+                    }
+
+                    .header__middle_search_btn {
+                        @include disp-in-block-mid;
+                        width: 38px;
+                        height: 30px;
+                        background: url($imgPath + "search_button.png") no-repeat 0 0;
+                        }
+
+                .header__middle_checkbox {
+                    @include disp-in-block-mid;
+                    }
+
+    /* footer */
+    .footer {
+        @extend .wrapper;
+        }
