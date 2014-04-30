@@ -51,6 +51,12 @@ H1, H2, H3, H4, H5, H6 { font-weight: normal; }
 
 IMG { vertical-align: top; }
 
+UL { list-style-type: none; }
+
+HTML, BODY, .wrapper { height: 100%; }
+
+BODY .wrapper { height: auto; min-height: 100%; }
+
 /**
  * Body basic formatting
  *
@@ -89,6 +95,20 @@ $imgPath:'../img/';
     }
 
 /* GLOBAL STYLES */
+.disp-in-block-top {
+    display: inline-block;
+    vertical-align: top;
+    }
+
+.disp-in-block-mid {
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+.disp-in-block-btm {
+    display: inline-block;
+    vertical-align: bottom;
+    }
 
 .btn {
     @include disp-in-block-mid;
@@ -114,10 +134,40 @@ $imgPath:'../img/';
 
 .no-padding { padding: 0; }
 
+.forms__border {
+    padding: 6px 9px;
+    border: 3px solid #8ddce3;
+    @include border-radius(3px);
+    background-color: white;
+    color: #5c5c5c;
+    &:focus { border-color: #64cfd9; }
+    }
+
+.input_width264px { width: 264px; }
+
+.h1 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #393939;
+    }
+
+.h3 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #393939;
+    }
+
+.text-align-center { text-align: center; }
+
+.margin-bottom30px { margin-bottom: 30px; }
+
 /* GLOBAL STYLES */
 
 /* BODY */
 BODY {
+    font-family: "Segoe UI";
     background: url($imgPath + 'bg.png') repeat 0 0;
     }
 
@@ -131,7 +181,11 @@ BODY {
         HEADER {margin-top: 23px;}
 
             /* header__top */
-            .header__top {overflow: hidden;}
+            .header__top {
+                margin-bottom: 13px;
+                overflow: hidden;
+                clear: both;
+                }
 
                 .logo {
                     float: left;
@@ -159,16 +213,17 @@ BODY {
                         background: url($imgPath + "buttons-border.png") repeat-y 0 0;
                         }
 
-
             /* header__middle */
             .header__middle {
+                padding: 34px 56px;
                 background: black;
                 }
 
                 .header__middle_search {
                     @include disp-in-block-mid;
+                    margin-right: 58px;
                     input {
-                        background: url($imgPath + "search_icon.png") no-repeat 0 0;
+                        background: url($imgPath + "search_icon.png") no-repeat 0 0 white;
                         }
                     }
 
@@ -176,14 +231,229 @@ BODY {
                         @include disp-in-block-mid;
                         width: 38px;
                         height: 30px;
-                        background: url($imgPath + "search_button.png") no-repeat 0 0;
+                        background: url($imgPath + "search_button.png") no-repeat 9px 4px;
+                        &:hover {cursor: pointer;}
                         }
 
                 .header__middle_checkbox {
                     @include disp-in-block-mid;
+                    color: #fdfdfd;
                     }
 
+        /* content */
+        .content { padding: 0 0 30px; }
+
+            .content__inner {
+                margin-bottom: 14px;
+                letter-spacing: -4px;
+                line-height: 0;
+                @include box-shadow(0, 0, 2px, #ccc);
+                background: url($imgPath + "content_bg.png") repeat-y 0 0 white;
+                }
+
+            /* content__box */
+            .content__box {
+                @include disp-in-block-top;
+                padding: 30px 10px 0;
+                width: 626px;
+                line-height: normal;
+                letter-spacing: normal;
+                }
+
+            /* content__sidebar */
+            .content__sidebar {
+                @include disp-in-block-top;
+                padding: 22px;
+                width: 232px;
+                line-height: normal;
+                letter-spacing: normal;
+                }
+
+                /* content__sidebar__socials */
+                .content__sidebar__socials { margin-bottom: 16px; }
+
+                    .content__sidebar__socials_btn {
+                        display: block;
+                        margin-bottom: 16px;
+                        width: 191px;
+                        height: 28px;
+                        color: #535353 ;
+                        background: url($imgPath + "social-icons.png") no-repeat;
+                        }
+
+                        .content__sidebar__socials_btn_fb {background-position: 0 0; }
+
+                        .content__sidebar__socials_btn_twitter { background-position: 0 -44px; }
+
+                        .content__sidebar__socials_btn SPAN {
+                            float: right;
+                            padding: 4px 4px 5px;
+                            border: 1px solid #d9d9d9;
+                            font-size: 12px;
+                            font-weight: bold;
+                            color: #535353;
+                            background: white;
+
+                            border-radius: 0 3px 3px 0;
+                            -moz-border-radius: 0 3px 3px 0;
+                            -webkit-border-radius: 0 3px 3px 0;
+                            }
+
+                /* content__sidebar_ask */
+                .content__sidebar_ask { margin: 0; }
+
+                    .content__sidebar_ask_title {
+                        display: block;
+                        margin: 0 0 23px 35px;
+                        width: 152px;
+                        font-size: 15px;
+                        font-style: italic;
+                        text-align: center;
+                        color: #3b3b3b;
+                        }
+
+                    .content__sidebar_ask_text {
+                        margin-bottom: 40px;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #4d4d4d;
+                        }
+
+                        .content__sidebar_ask_text A { color: #2a7acc; }
+
+                /* content__sidebar_subscribe */
+                .content__sidebar_subscribe {
+                    margin-bottom: 30px;
+                    padding: 9px;
+                    background: url($imgPath + "subscribe-bg.png") repeat 0 0;
+                    @include box-shadow(0, 0, 2px, #ccc);
+                    }
+
+                    .content__sidebar_subscribe_inner { padding: 16px; background-color: #f3f3f3; }
+
+                        .content__sidebar_subscribe_inner_title { margin-bottom: 16px; }
+
+                        .content__sidebar_subscribe_inner_text {
+                            @extend .content__sidebar_ask_text;
+                            margin: 0 0 20px;
+                            }
+
+                        .content__sidebar_subscribe_inner_btn { margin: 0 0 20px 52px; }
+
+                /* content__sidebar_we */
+                .content__sidebar_we {
+                    padding: 9px;
+                    background-color: white;
+                    @include box-shadow(0, 0, 2px, #ccc);
+                    }
+
+                    .content__sidebar_we_inner { padding: 16px; background-color: #f3f3f3; }
+
+                        .content__sidebar_we_inner_text { @extend .content__sidebar_ask_text; }
+
+                            .content__sidebar_we_inner_text A { color: #3681ce; text-decoration: underline; }
     /* footer */
     .footer {
-        @extend .wrapper;
+        margin: 0 0 -30px;
+        background: url($imgPath + "footer_bg.png") repeat 0 0;
         }
+
+        .footer__inner {
+            @extend .wrapper;
+            padding: 30px 0;
+            }
+
+            .footer__inner_pic {
+                @include disp-in-block-top;
+                margin-right: 13px;
+                padding-top: 5px;
+                width: 58px;
+                }
+
+                .footer__inner_pic IMG { max-width: 100%; }
+
+            .footer__inner_text {
+                @include disp-in-block-top;
+                font-size: 14px;
+                color: #333333;
+                }
+
+/*======================index.html===================*/
+
+/*======================my-vacancy.html===================*/
+/* content__box_vacancy */
+.content__box_vacancy {}
+
+    .content__box_vacancy_item { margin: 0; }
+
+    .content__box_vacancy_item:nth-child(2n+1) {background-color: #f3f3f3; }
+
+    .content__box_vacancy_item:hover .content__box_vacancy_link_img {background-position: left -50px; }
+
+        .content__box_vacancy_link {
+            display: block;
+            padding: 19px 23px;
+            text-decoration: none;
+            }
+
+            .content__box_vacancy_link_pic {
+                @include disp-in-block-mid;
+                margin-right: 30px;
+                width: 88px;
+                }
+
+                .content__box_vacancy_link_pic IMG { max-width: 100%; }
+
+            .content__box_vacancy_link_text {
+                @include disp-in-block-mid;
+                width: 207px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #434343;
+                }
+
+                .content__box_vacancy_link_text SPAN {
+                    display: block;
+                    font-size: 14px;
+                    color: #777;
+                    }
+
+            .content__box_vacancy_link_img {
+                @include disp-in-block-mid;
+                width: 43px;
+                height: 43px;
+                background: url($imgPath + "content__box_vacancy_img.png") no-repeat;
+                }
+
+            /* content__box_vacancy_link_status_wrap */
+            .content__box_vacancy_link_status_wrap {
+                float: right;
+                margin-top: 10px;
+                width: 136px;
+                }
+
+                .content__box_vacancy_link_status {
+                    @include disp-in-block-mid;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #525252;
+                    }
+
+                .content__box_vacancy_link_status_icon {
+                    @include disp-in-block-mid;
+                    margin-right: 28px;
+                    width: 12px;
+                    height: 12px;
+                    background: url($imgPath + "active_inactive.png") no-repeat left top;
+                    }
+
+                    .content__box_vacancy_link_status_active { background-position: 0 0; }
+
+                    .content__box_vacancy_link_inactive { background-position: left bottom; }
+
+/*======================add-vacancy.html===================*/
+
+/*======================subscribe.html===================*/
+
+/*======================info.html===================*/
+

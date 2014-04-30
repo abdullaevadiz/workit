@@ -71,6 +71,22 @@ IMG {
   vertical-align: top;
 }
 
+/* line 54, ../sass/style-workit.scss */
+UL {
+  list-style-type: none;
+}
+
+/* line 56, ../sass/style-workit.scss */
+HTML, BODY, .wrapper, .footer__inner {
+  height: 100%;
+}
+
+/* line 58, ../sass/style-workit.scss */
+BODY .wrapper, BODY .footer__inner {
+  height: auto;
+  min-height: 100%;
+}
+
 /**
  * Body basic formatting
  *
@@ -79,7 +95,25 @@ IMG {
  * @section basic formatting
  */
 /* GLOBAL STYLES */
-/* line 93, ../sass/style-workit.scss */
+/* line 98, ../sass/style-workit.scss */
+.disp-in-block-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 103, ../sass/style-workit.scss */
+.disp-in-block-mid {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 108, ../sass/style-workit.scss */
+.disp-in-block-btm {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 113, ../sass/style-workit.scss */
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -97,70 +131,119 @@ IMG {
   -moz-box-shadow: 1px 1px 2px #444343;
   -webkit-box-shadow: 1px 1px 2px #444343;
 }
-/* line 104, ../sass/style-workit.scss */
+/* line 124, ../sass/style-workit.scss */
 .btn:hover {
   cursor: pointer;
 }
 
-/* line 107, ../sass/style-workit.scss */
+/* line 127, ../sass/style-workit.scss */
 .btn_yellow {
   background: url("../img/vertical-sprite.png") repeat-x 0 0;
 }
 
-/* line 111, ../sass/style-workit.scss */
+/* line 131, ../sass/style-workit.scss */
 .btn_blue {
   background: url("../img/vertical-sprite.png") repeat-x 0 -44px;
 }
 
-/* line 115, ../sass/style-workit.scss */
+/* line 135, ../sass/style-workit.scss */
 .no-padding {
   padding: 0;
 }
 
+/* line 137, ../sass/style-workit.scss */
+.forms__border {
+  padding: 6px 9px;
+  border: 3px solid #8ddce3;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: white;
+  color: #5c5c5c;
+}
+/* line 143, ../sass/style-workit.scss */
+.forms__border:focus {
+  border-color: #64cfd9;
+}
+
+/* line 146, ../sass/style-workit.scss */
+.input_width264px {
+  width: 264px;
+}
+
+/* line 148, ../sass/style-workit.scss */
+.h1 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #393939;
+}
+
+/* line 155, ../sass/style-workit.scss */
+.h3 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #393939;
+}
+
+/* line 162, ../sass/style-workit.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 164, ../sass/style-workit.scss */
+.margin-bottom30px {
+  margin-bottom: 30px;
+}
+
 /* GLOBAL STYLES */
 /* BODY */
-/* line 120, ../sass/style-workit.scss */
+/* line 169, ../sass/style-workit.scss */
 BODY {
+  font-family: "Segoe UI";
   background: url("../img/bg.png") repeat 0 0;
 }
 
 /* wrapper */
-/* line 125, ../sass/style-workit.scss */
-.wrapper, .footer {
+/* line 175, ../sass/style-workit.scss */
+.wrapper, .footer__inner {
   margin: 0 auto;
   width: 923px;
 }
 
 /* header */
-/* line 131, ../sass/style-workit.scss */
+/* line 181, ../sass/style-workit.scss */
 HEADER {
   margin-top: 23px;
 }
 
 /* header__top */
-/* line 134, ../sass/style-workit.scss */
+/* line 184, ../sass/style-workit.scss */
 .header__top {
+  margin-bottom: 13px;
   overflow: hidden;
+  clear: both;
 }
 
-/* line 136, ../sass/style-workit.scss */
+/* line 190, ../sass/style-workit.scss */
 .logo {
   float: left;
 }
 
-/* line 140, ../sass/style-workit.scss */
+/* line 194, ../sass/style-workit.scss */
 .logo A {
   display: block;
   text-decoration: none;
 }
 
-/* line 145, ../sass/style-workit.scss */
+/* line 199, ../sass/style-workit.scss */
 .header__top_buttons {
   float: right;
   margin-right: 4px;
 }
 
-/* line 150, ../sass/style-workit.scss */
+/* line 204, ../sass/style-workit.scss */
 .login, .registration {
   display: inline-block;
   vertical-align: middle;
@@ -169,40 +252,347 @@ HEADER {
   text-decoration: none;
 }
 
-/* line 157, ../sass/style-workit.scss */
+/* line 211, ../sass/style-workit.scss */
 .registration {
   background: url("../img/buttons-border.png") repeat-y 0 0;
 }
 
 /* header__middle */
-/* line 164, ../sass/style-workit.scss */
+/* line 217, ../sass/style-workit.scss */
 .header__middle {
+  padding: 34px 56px;
   background: black;
 }
 
-/* line 168, ../sass/style-workit.scss */
+/* line 222, ../sass/style-workit.scss */
 .header__middle_search {
   display: inline-block;
   vertical-align: middle;
+  margin-right: 58px;
 }
-/* line 170, ../sass/style-workit.scss */
+/* line 225, ../sass/style-workit.scss */
 .header__middle_search input {
-  background: url("../img/search_icon.png") no-repeat 0 0;
+  background: url("../img/search_icon.png") no-repeat 0 0 white;
 }
 
-/* line 175, ../sass/style-workit.scss */
+/* line 230, ../sass/style-workit.scss */
 .header__middle_search_btn {
   display: inline-block;
   vertical-align: middle;
   width: 38px;
   height: 30px;
-  background: url("../img/search_button.png") no-repeat 0 0;
+  background: url("../img/search_button.png") no-repeat 9px 4px;
+}
+/* line 235, ../sass/style-workit.scss */
+.header__middle_search_btn:hover {
+  cursor: pointer;
 }
 
-/* line 182, ../sass/style-workit.scss */
+/* line 238, ../sass/style-workit.scss */
 .header__middle_checkbox {
   display: inline-block;
   vertical-align: middle;
+  color: #fdfdfd;
+}
+
+/* content */
+/* line 244, ../sass/style-workit.scss */
+.content {
+  padding: 0 0 30px;
+}
+
+/* line 246, ../sass/style-workit.scss */
+.content__inner {
+  margin-bottom: 14px;
+  letter-spacing: -4px;
+  line-height: 0;
+  box-shadow: 0 0 2px #cccccc;
+  -moz-box-shadow: 0 0 2px #cccccc;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+  background: url("../img/content_bg.png") repeat-y 0 0 white;
+}
+
+/* content__box */
+/* line 255, ../sass/style-workit.scss */
+.content__box {
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 10px 0;
+  width: 626px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* content__sidebar */
+/* line 264, ../sass/style-workit.scss */
+.content__sidebar {
+  display: inline-block;
+  vertical-align: top;
+  padding: 22px;
+  width: 232px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* content__sidebar__socials */
+/* line 273, ../sass/style-workit.scss */
+.content__sidebar__socials {
+  margin-bottom: 16px;
+}
+
+/* line 275, ../sass/style-workit.scss */
+.content__sidebar__socials_btn {
+  display: block;
+  margin-bottom: 16px;
+  width: 191px;
+  height: 28px;
+  color: #535353;
+  background: url("../img/social-icons.png") no-repeat;
+}
+
+/* line 284, ../sass/style-workit.scss */
+.content__sidebar__socials_btn_fb {
+  background-position: 0 0;
+}
+
+/* line 286, ../sass/style-workit.scss */
+.content__sidebar__socials_btn_twitter {
+  background-position: 0 -44px;
+}
+
+/* line 288, ../sass/style-workit.scss */
+.content__sidebar__socials_btn SPAN {
+  float: right;
+  padding: 4px 4px 5px;
+  border: 1px solid #d9d9d9;
+  font-size: 12px;
+  font-weight: bold;
+  color: #535353;
+  background: white;
+  border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+}
+
+/* content__sidebar_ask */
+/* line 303, ../sass/style-workit.scss */
+.content__sidebar_ask {
+  margin: 0;
+}
+
+/* line 305, ../sass/style-workit.scss */
+.content__sidebar_ask_title {
+  display: block;
+  margin: 0 0 23px 35px;
+  width: 152px;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  color: #3b3b3b;
+}
+
+/* line 315, ../sass/style-workit.scss */
+.content__sidebar_ask_text, .content__sidebar_subscribe_inner_text, .content__sidebar_we_inner_text {
+  margin-bottom: 40px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4d4d4d;
+}
+
+/* line 322, ../sass/style-workit.scss */
+.content__sidebar_ask_text A, .content__sidebar_subscribe_inner_text A, .content__sidebar_we_inner_text A {
+  color: #2a7acc;
+}
+
+/* content__sidebar_subscribe */
+/* line 325, ../sass/style-workit.scss */
+.content__sidebar_subscribe {
+  margin-bottom: 30px;
+  padding: 9px;
+  background: url("../img/subscribe-bg.png") repeat 0 0;
+  box-shadow: 0 0 2px #cccccc;
+  -moz-box-shadow: 0 0 2px #cccccc;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+}
+
+/* line 332, ../sass/style-workit.scss */
+.content__sidebar_subscribe_inner {
+  padding: 16px;
+  background-color: #f3f3f3;
+}
+
+/* line 334, ../sass/style-workit.scss */
+.content__sidebar_subscribe_inner_title {
+  margin-bottom: 16px;
+}
+
+/* line 336, ../sass/style-workit.scss */
+.content__sidebar_subscribe_inner_text {
+  margin: 0 0 20px;
+}
+
+/* line 341, ../sass/style-workit.scss */
+.content__sidebar_subscribe_inner_btn {
+  margin: 0 0 20px 52px;
+}
+
+/* content__sidebar_we */
+/* line 344, ../sass/style-workit.scss */
+.content__sidebar_we {
+  padding: 9px;
+  background-color: white;
+  box-shadow: 0 0 2px #cccccc;
+  -moz-box-shadow: 0 0 2px #cccccc;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+}
+
+/* line 350, ../sass/style-workit.scss */
+.content__sidebar_we_inner {
+  padding: 16px;
+  background-color: #f3f3f3;
+}
+
+/* line 354, ../sass/style-workit.scss */
+.content__sidebar_we_inner_text A {
+  color: #3681ce;
+  text-decoration: underline;
 }
 
 /* footer */
+/* line 356, ../sass/style-workit.scss */
+.footer {
+  margin: 0 0 -30px;
+  background: url("../img/footer_bg.png") repeat 0 0;
+}
+
+/* line 361, ../sass/style-workit.scss */
+.footer__inner {
+  padding: 30px 0;
+}
+
+/* line 366, ../sass/style-workit.scss */
+.footer__inner_pic {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 13px;
+  padding-top: 5px;
+  width: 58px;
+}
+
+/* line 373, ../sass/style-workit.scss */
+.footer__inner_pic IMG {
+  max-width: 100%;
+}
+
+/* line 375, ../sass/style-workit.scss */
+.footer__inner_text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  color: #333333;
+}
+
+/*======================index.html===================*/
+/*======================my-vacancy.html===================*/
+/* content__box_vacancy */
+/* line 387, ../sass/style-workit.scss */
+.content__box_vacancy_item {
+  margin: 0;
+}
+
+/* line 389, ../sass/style-workit.scss */
+.content__box_vacancy_item:nth-child(2n+1) {
+  background-color: #f3f3f3;
+}
+
+/* line 391, ../sass/style-workit.scss */
+.content__box_vacancy_item:hover .content__box_vacancy_link_img {
+  background-position: left -50px;
+}
+
+/* line 393, ../sass/style-workit.scss */
+.content__box_vacancy_link {
+  display: block;
+  padding: 19px 23px;
+  text-decoration: none;
+}
+
+/* line 399, ../sass/style-workit.scss */
+.content__box_vacancy_link_pic {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  width: 88px;
+}
+
+/* line 405, ../sass/style-workit.scss */
+.content__box_vacancy_link_pic IMG {
+  max-width: 100%;
+}
+
+/* line 407, ../sass/style-workit.scss */
+.content__box_vacancy_link_text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 207px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #434343;
+}
+
+/* line 415, ../sass/style-workit.scss */
+.content__box_vacancy_link_text SPAN {
+  display: block;
+  font-size: 14px;
+  color: #777;
+}
+
+/* line 421, ../sass/style-workit.scss */
+.content__box_vacancy_link_img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px;
+  height: 43px;
+  background: url("../img/content__box_vacancy_img.png") no-repeat;
+}
+
+/* content__box_vacancy_link_status_wrap */
+/* line 429, ../sass/style-workit.scss */
+.content__box_vacancy_link_status_wrap {
+  float: right;
+  margin-top: 10px;
+  width: 136px;
+}
+
+/* line 435, ../sass/style-workit.scss */
+.content__box_vacancy_link_status {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  color: #525252;
+}
+
+/* line 442, ../sass/style-workit.scss */
+.content__box_vacancy_link_status_icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 28px;
+  width: 12px;
+  height: 12px;
+  background: url("../img/active_inactive.png") no-repeat left top;
+}
+
+/* line 450, ../sass/style-workit.scss */
+.content__box_vacancy_link_status_active {
+  background-position: 0 0;
+}
+
+/* line 452, ../sass/style-workit.scss */
+.content__box_vacancy_link_inactive {
+  background-position: left bottom;
+}
+
+/*======================add-vacancy.html===================*/
+/*======================subscribe.html===================*/
+/*======================info.html===================*/

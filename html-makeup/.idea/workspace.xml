@@ -22,46 +22,37 @@
     <favorites_list name="workit" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="62" selection-start="1544" selection-end="1569" vertical-scroll-proportion="-18.961538" vertical-offset="272" max-vertical-offset="1615">
-              <folding>
-                <marker date="1398423594449" expanded="true" signature="238:442" placeholder="..." />
-                <marker date="1398423594449" expanded="true" signature="381:428" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style-workit.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="20" selection-start="4399" selection-end="4426" vertical-scroll-proportion="0.7751323" vertical-offset="2508" max-vertical-offset="3315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style-workit.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style-workit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="0" selection-start="3992" selection-end="3992" vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="3638">
-              <folding>
-                <marker date="1398423758063" expanded="true" signature="2776:2834" placeholder="{...}" />
-                <marker date="1398423758063" expanded="true" signature="2888:2935" placeholder="{...}" />
-                <marker date="1398423758063" expanded="true" signature="2982:3033" placeholder="{...}" />
-                <marker date="1398423758063" expanded="true" signature="3110:3121" placeholder="{...}" />
-                <marker date="1398423758063" expanded="true" signature="3171:3194" placeholder="{...}" />
-                <marker date="1398423758063" expanded="true" signature="3229:3303" placeholder="{...}" />
-                <marker date="1398423758063" expanded="true" signature="3413:3467" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="my-vacancy.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="68" column="62" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-0.7624161" vertical-offset="1724" max-vertical-offset="3944">
+                  <folding>
+                    <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
+                    <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="style-workit.scss" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="356" column="22" selection-start="10018" selection-end="10018" vertical-scroll-proportion="0.31527779" vertical-offset="5825" max-vertical-offset="7905">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -75,6 +66,7 @@
         <option value="$PROJECT_DIR$/css/style-workit.scss" />
         <option value="$PROJECT_DIR$/css/style-workit.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/my-vacancy.html" />
         <option value="$PROJECT_DIR$/sass/style-workit.scss" />
       </list>
     </option>
@@ -147,20 +139,6 @@
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html-makeup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -170,12 +148,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.SCSS" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/abdullaevadiz/workit/tree/master/html-makeup" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\akim\Desktop\workit\css" />
     </key>
@@ -220,6 +202,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="21c13dd9-aabb-4227-a6fa-662a024bdc88" name="Default" comment="" />
@@ -236,11 +235,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18062139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12216956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13490364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13461539" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -268,29 +267,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+        <state line="45" column="62" selection-start="1544" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1615">
           <folding>
-            <marker date="1398423594449" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398423594449" expanded="true" signature="381:428" placeholder="{...}" />
+            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
+            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding>
-            <marker date="1398423594449" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398423594449" expanded="true" signature="381:428" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style-workit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="95" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.449162" vertical-offset="159" max-vertical-offset="1054">
+        <state line="182" column="20" selection-start="4399" selection-end="4426" vertical-scroll-proportion="0.0" vertical-offset="2508" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>
@@ -298,31 +287,60 @@
     <entry file="file://$PROJECT_DIR$/css/style-workit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="192" column="0" selection-start="3992" selection-end="3992" vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="3638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="41" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
           <folding>
-            <marker date="1398423758063" expanded="true" signature="2776:2834" placeholder="{...}" />
-            <marker date="1398423758063" expanded="true" signature="2888:2935" placeholder="{...}" />
-            <marker date="1398423758063" expanded="true" signature="2982:3033" placeholder="{...}" />
-            <marker date="1398423758063" expanded="true" signature="3110:3121" placeholder="{...}" />
-            <marker date="1398423758063" expanded="true" signature="3171:3194" placeholder="{...}" />
-            <marker date="1398423758063" expanded="true" signature="3229:3303" placeholder="{...}" />
-            <marker date="1398423758063" expanded="true" signature="3413:3467" placeholder="{...}" />
+            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
+            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="62" selection-start="1544" selection-end="1569" vertical-scroll-proportion="-18.961538" vertical-offset="272" max-vertical-offset="1615">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
           <folding>
-            <marker date="1398423594449" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398423594449" expanded="true" signature="381:428" placeholder="{...}" />
+            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
+            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style-workit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="95" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.449162" vertical-offset="159" max-vertical-offset="1054" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-workit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="0" selection-start="3992" selection-end="3992" vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="3638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://github.com/abdullaevadiz/workit/tree/master/html-makeup">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="62" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-0.7624161" vertical-offset="1724" max-vertical-offset="3944">
+          <folding>
+            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
+            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="20" selection-start="4399" selection-end="4426" vertical-scroll-proportion="0.7751323" vertical-offset="2508" max-vertical-offset="3315">
+        <state line="356" column="22" selection-start="10018" selection-end="10018" vertical-scroll-proportion="0.31527779" vertical-offset="5825" max-vertical-offset="7905">
           <folding />
         </state>
       </provider>
