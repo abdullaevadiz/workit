@@ -25,13 +25,13 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="my-vacancy.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+          <file leaf-file-name="add-vacancy.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/add-vacancy.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="68" column="62" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-0.7624161" vertical-offset="1724" max-vertical-offset="3944">
+                <state line="142" column="35" selection-start="6335" selection-end="6335" vertical-scroll-proportion="0.7261745" vertical-offset="1873" max-vertical-offset="3672">
                   <folding>
-                    <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
-                    <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
+                    <marker date="1399035647321" expanded="true" signature="235:448" placeholder="..." />
+                    <marker date="1399035647321" expanded="true" signature="382:435" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -41,10 +41,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="style-workit.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="style-workit.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="356" column="22" selection-start="10018" selection-end="10018" vertical-scroll-proportion="0.31527779" vertical-offset="5825" max-vertical-offset="7905">
+                <state line="537" column="20" selection-start="15663" selection-end="15663" vertical-scroll-proportion="8.849665" vertical-offset="2536" max-vertical-offset="9826">
                   <folding />
                 </state>
               </provider>
@@ -65,9 +65,11 @@
         <option value="$PROJECT_DIR$/style-workit.scss" />
         <option value="$PROJECT_DIR$/css/style-workit.scss" />
         <option value="$PROJECT_DIR$/css/style-workit.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/my-vacancy.html" />
+        <option value="$PROJECT_DIR$/index2.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/style-workit.scss" />
+        <option value="$PROJECT_DIR$/add-vacancy.html" />
       </list>
     </option>
   </component>
@@ -119,24 +121,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="html-makeup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html-makeup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style-workit.scss" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -267,14 +251,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+    <entry file="file://$PROJECT_DIR$/vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="62" selection-start="1544" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1615">
+        <state line="209" column="0" selection-start="10071" selection-end="10071" vertical-scroll-proportion="0.0" vertical-offset="3026" max-vertical-offset="3026">
           <folding>
-            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1399031172279" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1399031172279" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9503">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="62" selection-start="2820" selection-end="2820" vertical-scroll-proportion="0.0" vertical-offset="1724" max-vertical-offset="3944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="356" column="22" selection-start="10018" selection-end="10018" vertical-scroll-proportion="0.0" vertical-offset="5825" max-vertical-offset="7905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="62" selection-start="1544" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
@@ -293,22 +302,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="25" column="41" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding>
-            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style-workit.css">
@@ -330,18 +329,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="62" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-0.7624161" vertical-offset="1724" max-vertical-offset="3944">
+        <state line="19" column="25" selection-start="525" selection-end="525" vertical-scroll-proportion="-1.815155" vertical-offset="1904" max-vertical-offset="3961" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="17" selection-start="2538" selection-end="2538" vertical-scroll-proportion="-12.923077" vertical-offset="208" max-vertical-offset="3128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="47" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.68640643" vertical-offset="935" max-vertical-offset="3706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="232" selection-end="232" vertical-scroll-proportion="0.15973154" vertical-offset="0" max-vertical-offset="3026">
           <folding>
-            <marker date="1398876800118" expanded="true" signature="238:442" placeholder="..." />
-            <marker date="1398876800118" expanded="true" signature="381:428" placeholder="{...}" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1399031172279" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1399031172279" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style-workit.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="356" column="22" selection-start="10018" selection-end="10018" vertical-scroll-proportion="0.31527779" vertical-offset="5825" max-vertical-offset="7905">
+        <state line="537" column="20" selection-start="15663" selection-end="15663" vertical-scroll-proportion="8.849665" vertical-offset="2536" max-vertical-offset="9826">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="35" selection-start="6335" selection-end="6335" vertical-scroll-proportion="0.7261745" vertical-offset="1873" max-vertical-offset="3672">
+          <folding>
+            <marker date="1399035647321" expanded="true" signature="235:448" placeholder="..." />
+            <marker date="1399035647321" expanded="true" signature="382:435" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
