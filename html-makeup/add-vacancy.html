@@ -70,7 +70,7 @@
                 <!--content__box__form begin-->
                 <form class="content__box__form">
                     <fieldset>
-                        <span>Название вакансииЖ</span>
+                        <span>Название вакансии:</span>
                         <input type="text" class="forms__border input_width264px float-right" />
                     </fieldset>
                     <fieldset>
@@ -87,9 +87,9 @@
                         <input type="text" class="forms__border input_width264px float-right" />
                     </fieldset>
                     <fieldset>
-                        <span>КатегорииЖ</span>
+                        <span>Категории:</span>
                         <div class="float-right">
-                            <select>
+                            <select class="input_width264px">
                                 <option></option>
                             </select>
                         </div>
@@ -114,15 +114,9 @@
 
                 <div>
                     <span>Электронная почта или сайт для связи</span>
-                    <input type="file" class="input_width264px forms__border" />
-                </div>
-
-                <div class="content__box_add_subcrb">
-                    <label>
-                        <input type="text" placeholder="| E-mail" class="forms__border input_width264px margin-bottom30px" />
-                    </label>
-                    <br />
-                    <button class="btn btn_yellow">Подписаться</button>
+                    <div class="type__file float-right">
+                        <input type="file" class="input_width264px opacity_none" />
+                    </div>
                 </div>
             </div>
             <!--content__box end-->
@@ -185,6 +179,9 @@
 
             </div>
             <!--content__sidebar end-->
+        </div>
+        <div class="text-align-center">
+            <button class="btn btn_yellow">Добавить вакансию</button>
         </div>
 
     </div>

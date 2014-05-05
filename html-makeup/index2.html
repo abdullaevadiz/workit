@@ -4,6 +4,7 @@
     <title>index2</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <link rel="stylesheet" href="css/style-workit.css" media="all"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <!--[if lt IE 9]>
     <script>
         var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
@@ -209,6 +210,16 @@
 </section>
 <!--popup end-->
 
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        var widthBlock = 366;
+        var heightBlock = 366;
+        $(".popup__inner_box").each(function(){
+            var self = $(this);
+            self.css({"width":widthBlock, "height":heightBlock});
+            self.css({"margin-left":-(widthBlock/2), "margin-top":-(heightBlock/2)});
+        });
+    });
+</script>
 </body>
 </html>
