@@ -140,18 +140,35 @@ BODY .wrapper, BODY .footer__inner {
 .btn_yellow {
   background: url("../img/vertical-sprite.png") repeat-x 0 0;
 }
+/* line 129, ../sass/style-workit.scss */
+.btn_yellow:hover {
+  background: #f2cc63;
+}
 
-/* line 131, ../sass/style-workit.scss */
+/* line 132, ../sass/style-workit.scss */
 .btn_blue {
   background: url("../img/vertical-sprite.png") repeat-x 0 -44px;
 }
+/* line 134, ../sass/style-workit.scss */
+.btn_blue:hover {
+  background: #7fd3df;
+}
 
-/* line 135, ../sass/style-workit.scss */
+/* line 137, ../sass/style-workit.scss */
+.btn_red {
+  background: url("../img/vertical-sprite.png") repeat-x 0 -122px;
+}
+/* line 139, ../sass/style-workit.scss */
+.btn_red:hover {
+  background: #f23e36;
+}
+
+/* line 142, ../sass/style-workit.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 137, ../sass/style-workit.scss */
+/* line 144, ../sass/style-workit.scss */
 .forms__border {
   padding: 6px 9px;
   border: 3px solid #8ddce3;
@@ -161,17 +178,17 @@ BODY .wrapper, BODY .footer__inner {
   background-color: white;
   color: #5c5c5c;
 }
-/* line 143, ../sass/style-workit.scss */
+/* line 150, ../sass/style-workit.scss */
 .forms__border:focus {
   border-color: #64cfd9;
 }
 
-/* line 146, ../sass/style-workit.scss */
+/* line 153, ../sass/style-workit.scss */
 .input_width264px {
   width: 245px;
 }
 
-/* line 148, ../sass/style-workit.scss */
+/* line 155, ../sass/style-workit.scss */
 .h1 {
   font-size: 14px;
   font-weight: bold;
@@ -179,7 +196,7 @@ BODY .wrapper, BODY .footer__inner {
   color: #393939;
 }
 
-/* line 155, ../sass/style-workit.scss */
+/* line 162, ../sass/style-workit.scss */
 .h3 {
   font-size: 12px;
   font-weight: bold;
@@ -187,92 +204,112 @@ BODY .wrapper, BODY .footer__inner {
   color: #393939;
 }
 
-/* line 162, ../sass/style-workit.scss */
+/* line 169, ../sass/style-workit.scss */
 .h4 {
   font-size: 14px;
   font-weight: bold;
   color: #393939;
 }
 
-/* line 168, ../sass/style-workit.scss */
+/* line 175, ../sass/style-workit.scss */
 .hr {
   margin: 10px 0 20px;
   height: 1px;
   background-color: #b2b2b2;
 }
 
-/* line 174, ../sass/style-workit.scss */
+/* line 181, ../sass/style-workit.scss */
 .text-align-center {
   text-align: center;
 }
 
-/* line 176, ../sass/style-workit.scss */
+/* line 183, ../sass/style-workit.scss */
 .margin-bottom30px {
   margin-bottom: 30px;
 }
 
-/* line 178, ../sass/style-workit.scss */
+/* line 184, ../sass/style-workit.scss */
+.margin-left-right {
+  margin: 0 60px;
+}
+
+/* line 186, ../sass/style-workit.scss */
 .float-right {
   float: right;
 }
 
-/* line 180, ../sass/style-workit.scss */
-.floar-left {
+/* line 188, ../sass/style-workit.scss */
+.float-left {
   float: left;
 }
 
-/* line 182, ../sass/style-workit.scss */
+/* line 190, ../sass/style-workit.scss */
 .opacity_none {
   opacity: 0;
 }
 
+/* line 192, ../sass/style-workit.scss */
+.paddingLeft60px {
+  padding-left: 60px;
+}
+
+/* line 194, ../sass/style-workit.scss */
+.width-auto {
+  width: auto !important;
+}
+
 /* GLOBAL STYLES */
 /* BODY */
-/* line 187, ../sass/style-workit.scss */
+/* line 199, ../sass/style-workit.scss */
 BODY {
   font-family: "Segoe UI";
   background: url("../img/bg.png") repeat 0 0;
 }
 
 /* wrapper */
-/* line 193, ../sass/style-workit.scss */
+/* line 205, ../sass/style-workit.scss */
 .wrapper, .footer__inner {
   margin: 0 auto;
   width: 923px;
 }
 
 /* header */
-/* line 199, ../sass/style-workit.scss */
+/* line 211, ../sass/style-workit.scss */
 HEADER {
   margin-top: 23px;
 }
 
 /* header__top */
-/* line 202, ../sass/style-workit.scss */
+/* line 214, ../sass/style-workit.scss */
 .header__top {
   margin-bottom: 13px;
   overflow: hidden;
   clear: both;
 }
 
-/* line 208, ../sass/style-workit.scss */
+/* line 220, ../sass/style-workit.scss */
 .logo {
   float: left;
 }
 
-/* line 212, ../sass/style-workit.scss */
+/* line 224, ../sass/style-workit.scss */
 .logo A {
   display: block;
   text-decoration: none;
 }
 
-/* line 217, ../sass/style-workit.scss */
+/* line 229, ../sass/style-workit.scss */
 .header__top_buttons {
   float: right;
   margin-right: 4px;
 }
 
-/* line 222, ../sass/style-workit.scss */
+/* line 234, ../sass/style-workit.scss */
+.header__top_buttons > BUTTON {
+  margin-right: 20px;
+}
+
+/* line 236, ../sass/style-workit.scss */
 .login, .registration {
   display: inline-block;
   vertical-align: middle;
@@ -281,32 +318,32 @@ HEADER {
   text-decoration: none;
 }
 
-/* line 229, ../sass/style-workit.scss */
+/* line 243, ../sass/style-workit.scss */
 .registration {
   background: url("../img/buttons-border.png") repeat-y 0 0;
 }
 
 /* header__middle */
-/* line 235, ../sass/style-workit.scss */
+/* line 249, ../sass/style-workit.scss */
 .header__middle {
   padding: 34px 56px;
   background: black;
 }
 
-/* line 240, ../sass/style-workit.scss */
+/* line 254, ../sass/style-workit.scss */
 .header__middle_search {
   display: inline-block;
   vertical-align: middle;
   margin-right: 58px;
 }
-/* line 243, ../sass/style-workit.scss */
+/* line 257, ../sass/style-workit.scss */
 .header__middle_search input {
   padding: 6px 9px 6px 39px;
   width: 224px;
   background: url("../img/search_icon.png") no-repeat 5px 7px white;
 }
 
-/* line 250, ../sass/style-workit.scss */
+/* line 264, ../sass/style-workit.scss */
 .header__middle_search_btn {
   display: inline-block;
   vertical-align: middle;
@@ -314,12 +351,12 @@ HEADER {
   height: 30px;
   background: url("../img/search_button.png") no-repeat 9px 4px;
 }
-/* line 255, ../sass/style-workit.scss */
+/* line 269, ../sass/style-workit.scss */
 .header__middle_search_btn:hover {
   cursor: pointer;
 }
 
-/* line 258, ../sass/style-workit.scss */
+/* line 272, ../sass/style-workit.scss */
 .header__middle_checkbox {
   display: inline-block;
   vertical-align: middle;
@@ -327,12 +364,12 @@ HEADER {
 }
 
 /* content */
-/* line 264, ../sass/style-workit.scss */
+/* line 278, ../sass/style-workit.scss */
 .content {
   padding: 0 0 30px;
 }
 
-/* line 266, ../sass/style-workit.scss */
+/* line 280, ../sass/style-workit.scss */
 .content__inner {
   margin-bottom: 14px;
   letter-spacing: -4px;
@@ -344,7 +381,7 @@ HEADER {
 }
 
 /* content__box */
-/* line 275, ../sass/style-workit.scss */
+/* line 289, ../sass/style-workit.scss */
 .content__box {
   display: inline-block;
   vertical-align: top;
@@ -354,8 +391,15 @@ HEADER {
   letter-spacing: normal;
 }
 
+/* content__box_more_padding */
+/* line 297, ../sass/style-workit.scss */
+.content__box_more_padding {
+  padding: 30px;
+  width: 585px;
+}
+
 /* content__sidebar */
-/* line 284, ../sass/style-workit.scss */
+/* line 303, ../sass/style-workit.scss */
 .content__sidebar {
   display: inline-block;
   vertical-align: top;
@@ -366,12 +410,12 @@ HEADER {
 }
 
 /* content__sidebar__socials */
-/* line 293, ../sass/style-workit.scss */
+/* line 312, ../sass/style-workit.scss */
 .content__sidebar__socials {
   margin-bottom: 16px;
 }
 
-/* line 295, ../sass/style-workit.scss */
+/* line 314, ../sass/style-workit.scss */
 .content__sidebar__socials_btn {
   display: block;
   margin-bottom: 16px;
@@ -381,17 +425,17 @@ HEADER {
   background: url("../img/social-icons.png") no-repeat;
 }
 
-/* line 304, ../sass/style-workit.scss */
+/* line 323, ../sass/style-workit.scss */
 .content__sidebar__socials_btn_fb {
   background-position: 0 0;
 }
 
-/* line 306, ../sass/style-workit.scss */
+/* line 325, ../sass/style-workit.scss */
 .content__sidebar__socials_btn_twitter {
   background-position: 0 -44px;
 }
 
-/* line 308, ../sass/style-workit.scss */
+/* line 327, ../sass/style-workit.scss */
 .content__sidebar__socials_btn SPAN {
   float: right;
   padding: 4px 4px 5px;
@@ -406,12 +450,12 @@ HEADER {
 }
 
 /* content__sidebar_ask */
-/* line 323, ../sass/style-workit.scss */
+/* line 342, ../sass/style-workit.scss */
 .content__sidebar_ask {
   margin: 0;
 }
 
-/* line 325, ../sass/style-workit.scss */
+/* line 344, ../sass/style-workit.scss */
 .content__sidebar_ask_title {
   display: block;
   margin: 0 0 23px 35px;
@@ -422,7 +466,7 @@ HEADER {
   color: #3b3b3b;
 }
 
-/* line 335, ../sass/style-workit.scss */
+/* line 354, ../sass/style-workit.scss */
 .content__sidebar_ask_text, .content__sidebar_subscribe_inner_text, .content__sidebar_we_inner_text {
   margin-bottom: 40px;
   font-size: 12px;
@@ -430,13 +474,13 @@ HEADER {
   color: #4d4d4d;
 }
 
-/* line 342, ../sass/style-workit.scss */
+/* line 361, ../sass/style-workit.scss */
 .content__sidebar_ask_text A, .content__sidebar_subscribe_inner_text A, .content__sidebar_we_inner_text A {
   color: #2a7acc;
 }
 
 /* content__sidebar_subscribe */
-/* line 345, ../sass/style-workit.scss */
+/* line 364, ../sass/style-workit.scss */
 .content__sidebar_subscribe {
   margin-bottom: 30px;
   padding: 9px;
@@ -446,29 +490,29 @@ HEADER {
   -webkit-box-shadow: 0 0 2px #cccccc;
 }
 
-/* line 352, ../sass/style-workit.scss */
+/* line 371, ../sass/style-workit.scss */
 .content__sidebar_subscribe_inner {
   padding: 16px;
   background-color: #f3f3f3;
 }
 
-/* line 354, ../sass/style-workit.scss */
+/* line 373, ../sass/style-workit.scss */
 .content__sidebar_subscribe_inner_title {
   margin-bottom: 16px;
 }
 
-/* line 356, ../sass/style-workit.scss */
+/* line 375, ../sass/style-workit.scss */
 .content__sidebar_subscribe_inner_text {
   margin: 0 0 20px;
 }
 
-/* line 361, ../sass/style-workit.scss */
+/* line 380, ../sass/style-workit.scss */
 .content__sidebar_subscribe_inner_btn {
   margin: 0 0 20px 52px;
 }
 
 /* content__sidebar_we */
-/* line 364, ../sass/style-workit.scss */
+/* line 383, ../sass/style-workit.scss */
 .content__sidebar_we {
   padding: 9px;
   background-color: white;
@@ -477,31 +521,31 @@ HEADER {
   -webkit-box-shadow: 0 0 2px #cccccc;
 }
 
-/* line 370, ../sass/style-workit.scss */
+/* line 389, ../sass/style-workit.scss */
 .content__sidebar_we_inner {
   padding: 16px;
   background-color: #f3f3f3;
 }
 
-/* line 374, ../sass/style-workit.scss */
+/* line 393, ../sass/style-workit.scss */
 .content__sidebar_we_inner_text A {
   color: #3681ce;
   text-decoration: underline;
 }
 
 /* footer */
-/* line 376, ../sass/style-workit.scss */
+/* line 395, ../sass/style-workit.scss */
 .footer {
   margin: 0 0 -30px;
   background: url("../img/footer_bg.png") repeat 0 0;
 }
 
-/* line 381, ../sass/style-workit.scss */
+/* line 400, ../sass/style-workit.scss */
 .footer__inner {
   padding: 30px 0;
 }
 
-/* line 386, ../sass/style-workit.scss */
+/* line 405, ../sass/style-workit.scss */
 .footer__inner_pic {
   display: inline-block;
   vertical-align: top;
@@ -510,12 +554,12 @@ HEADER {
   width: 58px;
 }
 
-/* line 393, ../sass/style-workit.scss */
+/* line 412, ../sass/style-workit.scss */
 .footer__inner_pic IMG {
   max-width: 100%;
 }
 
-/* line 395, ../sass/style-workit.scss */
+/* line 414, ../sass/style-workit.scss */
 .footer__inner_text {
   display: inline-block;
   vertical-align: top;
@@ -524,7 +568,7 @@ HEADER {
 }
 
 /* popup */
-/* line 402, ../sass/style-workit.scss */
+/* line 421, ../sass/style-workit.scss */
 .popup {
   position: fixed;
   top: 0;
@@ -535,14 +579,14 @@ HEADER {
   z-index: 1000;
 }
 
-/* line 412, ../sass/style-workit.scss */
+/* line 431, ../sass/style-workit.scss */
 .popup__inner {
   position: relative;
   padding: 28px;
   z-index: 1001;
 }
 
-/* line 419, ../sass/style-workit.scss */
+/* line 438, ../sass/style-workit.scss */
 .popup__inner_box {
   position: absolute;
   top: 50%;
@@ -552,7 +596,7 @@ HEADER {
   z-index: 1002;
 }
 
-/* line 428, ../sass/style-workit.scss */
+/* line 447, ../sass/style-workit.scss */
 .popup__inner_box_close {
   float: right;
   margin: -15px -15px 0 0;
@@ -560,18 +604,18 @@ HEADER {
   height: 9px;
   background: url("../img/close.png") no-repeat 0 0;
 }
-/* line 434, ../sass/style-workit.scss */
+/* line 453, ../sass/style-workit.scss */
 .popup__inner_box_close:hover {
   cursor: pointer;
 }
 
-/* line 437, ../sass/style-workit.scss */
+/* line 456, ../sass/style-workit.scss */
 .popup__inner_box_title {
   margin-bottom: 26px;
   color: #5c5c5c;
 }
 
-/* line 439, ../sass/style-workit.scss */
+/* line 458, ../sass/style-workit.scss */
 .popup__inner_box_text {
   margin-bottom: 18px;
   font-size: 14px;
@@ -582,29 +626,29 @@ HEADER {
 /*======================index.html===================*/
 /*======================my-vacancy.html===================*/
 /* content__box_vacancy */
-/* line 452, ../sass/style-workit.scss */
+/* line 471, ../sass/style-workit.scss */
 .content__box_vacancy_item {
   margin: 0;
 }
 
-/* line 454, ../sass/style-workit.scss */
+/* line 473, ../sass/style-workit.scss */
 .content__box_vacancy_item:nth-child(2n+1) {
   background-color: #f3f3f3;
 }
 
-/* line 456, ../sass/style-workit.scss */
+/* line 475, ../sass/style-workit.scss */
 .content__box_vacancy_item:hover .content__box_vacancy_link_img {
   background-position: left -50px;
 }
 
-/* line 458, ../sass/style-workit.scss */
+/* line 477, ../sass/style-workit.scss */
 .content__box_vacancy_link {
   display: block;
   padding: 19px 23px;
   text-decoration: none;
 }
 
-/* line 464, ../sass/style-workit.scss */
+/* line 483, ../sass/style-workit.scss */
 .content__box_vacancy_link_pic {
   display: inline-block;
   vertical-align: middle;
@@ -612,12 +656,12 @@ HEADER {
   width: 88px;
 }
 
-/* line 470, ../sass/style-workit.scss */
+/* line 489, ../sass/style-workit.scss */
 .content__box_vacancy_link_pic IMG {
   max-width: 100%;
 }
 
-/* line 472, ../sass/style-workit.scss */
+/* line 491, ../sass/style-workit.scss */
 .content__box_vacancy_link_text {
   display: inline-block;
   vertical-align: middle;
@@ -627,14 +671,14 @@ HEADER {
   color: #434343;
 }
 
-/* line 480, ../sass/style-workit.scss */
+/* line 499, ../sass/style-workit.scss */
 .content__box_vacancy_link_text SPAN {
   display: block;
   font-size: 14px;
   color: #777;
 }
 
-/* line 486, ../sass/style-workit.scss */
+/* line 505, ../sass/style-workit.scss */
 .content__box_vacancy_link_img {
   display: inline-block;
   vertical-align: middle;
@@ -644,14 +688,13 @@ HEADER {
 }
 
 /* content__box_vacancy_link_status_wrap */
-/* line 494, ../sass/style-workit.scss */
+/* line 513, ../sass/style-workit.scss */
 .content__box_vacancy_link_status_wrap {
-  float: right;
   margin-top: 10px;
   width: 136px;
 }
 
-/* line 500, ../sass/style-workit.scss */
+/* line 518, ../sass/style-workit.scss */
 .content__box_vacancy_link_status {
   display: inline-block;
   vertical-align: middle;
@@ -660,7 +703,7 @@ HEADER {
   color: #525252;
 }
 
-/* line 507, ../sass/style-workit.scss */
+/* line 525, ../sass/style-workit.scss */
 .content__box_vacancy_link_status_icon {
   display: inline-block;
   vertical-align: middle;
@@ -670,38 +713,38 @@ HEADER {
   background: url("../img/active_inactive.png") no-repeat left top;
 }
 
-/* line 515, ../sass/style-workit.scss */
+/* line 533, ../sass/style-workit.scss */
 .content__box_vacancy_link_status_active {
   background-position: 0 0;
 }
 
-/* line 517, ../sass/style-workit.scss */
+/* line 535, ../sass/style-workit.scss */
 .content__box_vacancy_link_inactive {
   background-position: left bottom;
 }
 
 /*======================vacancy.html===================*/
 /* content__box_vacancy_link_status_icon_position */
-/* line 521, ../sass/style-workit.scss */
+/* line 539, ../sass/style-workit.scss */
 .content__box_vacancy_link_status_icon_position {
   width: 11px;
   height: 18px;
   background: url("../img/position.png") no-repeat 0 0;
 }
 
-/* line 527, ../sass/style-workit.scss */
+/* line 545, ../sass/style-workit.scss */
 .content__box_vacancy_addlist {
   margin-bottom: 60px;
 }
 
 /* content__box_vacancy_add */
-/* line 529, ../sass/style-workit.scss */
+/* line 547, ../sass/style-workit.scss */
 .content__box_vacancy_add {
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
 }
 
-/* line 534, ../sass/style-workit.scss */
+/* line 552, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon {
   display: inline-block;
   vertical-align: middle;
@@ -711,106 +754,240 @@ HEADER {
   background: url("../img/sprite_vacancy_category.png") no-repeat;
 }
 
-/* line 542, ../sass/style-workit.scss */
+/* line 560, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_diffrnt {
   background-position: -2px 3px;
 }
 
-/* line 543, ../sass/style-workit.scss */
+/* line 561, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_design {
   background-position: -2px -28px;
 }
 
-/* line 544, ../sass/style-workit.scss */
+/* line 562, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_frontend {
   background-position: -2px -58px;
 }
 
-/* line 545, ../sass/style-workit.scss */
+/* line 563, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_backend {
   background-position: -2px -89px;
 }
 
-/* line 546, ../sass/style-workit.scss */
+/* line 564, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_apps {
   background-position: -2px -118px;
 }
 
-/* line 547, ../sass/style-workit.scss */
+/* line 565, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_manage {
   background-position: -2px -149px;
 }
 
-/* line 548, ../sass/style-workit.scss */
+/* line 566, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_content {
   background-position: -2px -178px;
 }
 
-/* line 549, ../sass/style-workit.scss */
+/* line 567, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_admin {
   background-position: -4px -208px;
 }
 
-/* line 550, ../sass/style-workit.scss */
+/* line 568, ../sass/style-workit.scss */
 .content__box_vacancy_add_icon_test {
   background-position: 0 -237px;
 }
 
-/* line 552, ../sass/style-workit.scss */
+/* line 570, ../sass/style-workit.scss */
 .content__box_vacancy_add_text {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 554, ../sass/style-workit.scss */
+/* line 572, ../sass/style-workit.scss */
 .content__box_vacancy_add LABEL {
   float: right;
   margin: 6px 20px;
 }
 
 /* content__box_add_subcrb */
-/* line 557, ../sass/style-workit.scss */
+/* line 575, ../sass/style-workit.scss */
 .content__box_add_subcrb {
   text-align: center;
 }
 
 /*=====================add-vacancy.html================*/
 /* content__sidebar_help__list */
-/* line 565, ../sass/style-workit.scss */
+/* line 583, ../sass/style-workit.scss */
 .content__sidebar_help__list_item {
   margin-bottom: 30px;
   font-size: 12px;
   color: #4d4d4d;
 }
 
-/* line 571, ../sass/style-workit.scss */
+/* line 589, ../sass/style-workit.scss */
 .content__sidebar_help__list_item SPAN {
   margin-right: 4px;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 577, ../sass/style-workit.scss */
+/* line 595, ../sass/style-workit.scss */
 .content__sidebar_help__list_item_click {
   color: #2a7acc;
 }
 
 /* content__box__form */
-/* line 582, ../sass/style-workit.scss */
+/* line 600, ../sass/style-workit.scss */
 .content__box__form FIELDSET {
   margin-bottom: 26px;
 }
 
-/* line 584, ../sass/style-workit.scss */
+/* line 602, ../sass/style-workit.scss */
 .type__file {
   width: 270px;
   height: 33px;
   background: url("../img/browse_btn.png") no-repeat 0 0;
 }
-/* line 588, ../sass/style-workit.scss */
+/* line 606, ../sass/style-workit.scss */
 .type__file INPUT:hover {
   cursor: pointer;
 }
 
 /*======================subscribe.html===================*/
 /*======================info.html===================*/
+/* line 612, ../sass/style-workit.scss */
+.h1_date {
+  font-size: 12px;
+  color: #555555;
+  text-transform: lowercase;
+}
+
+/* info__list */
+/* line 623, ../sass/style-workit.scss */
+.info__list_item .content__box_vacancy_add_text {
+  color: #393939;
+}
+
+/* line 625, ../sass/style-workit.scss */
+.content__box_vacancy_link_img SPAN {
+  margin-top: 10px;
+  color: #393939;
+}
+
+/* info__block */
+/* content__box_vacancy_info */
+/* line 636, ../sass/style-workit.scss */
+.content__box_vacancy_info {
+  margin-bottom: 20px;
+}
+
+/* line 638, ../sass/style-workit.scss */
+.content__box_vacancy_info .content__box_vacancy_item:nth-child(2n+1) {
+  background: white;
+}
+
+/* info__block__left */
+/* line 641, ../sass/style-workit.scss */
+.info__block__left {
+  margin-right: 40px;
+  width: 162px;
+}
+
+/* line 643, ../sass/style-workit.scss */
+.info__block__left .h4 {
+  margin-bottom: 12px;
+}
+
+/* line 645, ../sass/style-workit.scss */
+.info__block__left_pic {
+  margin-bottom: 20px;
+  width: 160px;
+  height: 160px;
+}
+
+/* line 651, ../sass/style-workit.scss */
+.info__block__left_pic IMG {
+  max-width: 100%;
+}
+
+/* line 653, ../sass/style-workit.scss */
+.info__block__left_info {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #393939;
+}
+
+/* line 659, ../sass/style-workit.scss */
+.info__block__left_link {
+  font-size: 14px;
+  color: #2a7acc;
+}
+
+/* info__block__right*/
+/* line 665, ../sass/style-workit.scss */
+.info__block__right {
+  width: 358px;
+}
+
+/* info__block__right_descript */
+/* line 672, ../sass/style-workit.scss */
+.info__block__right_descript > LI {
+  line-height: 20px;
+}
+
+/* line 676, ../sass/style-workit.scss */
+.info__block__right_descript_text, .instructions_text {
+  font-size: 12px;
+  color: #4d4d4d;
+}
+
+/* line 681, ../sass/style-workit.scss */
+.info__block__right_descript_text_title {
+  margin-left: 34px;
+}
+
+/* info__block__bottom */
+/* line 684, ../sass/style-workit.scss */
+.info__block__bottom {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 689, ../sass/style-workit.scss */
+.info__block__bottom_btn {
+  margin-right: 52px;
+}
+
+/* line 691, ../sass/style-workit.scss */
+.info__block__bottom_social {
+  font-size: 14px;
+  color: #393939;
+}
+
+/* line 696, ../sass/style-workit.scss */
+.info__block__bottom_social_icons {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background: url("../img/share_icons.png") no-repeat 0 0;
+}
+
+/* line 703, ../sass/style-workit.scss */
+.info__block__bottom_social_icons_fb {
+  margin-left: 10px;
+  background-position: 0 -21px;
+}
+
+/* line 705, ../sass/style-workit.scss */
+.info__block__bottom_social_icons_twi {
+  background-position: 0 0;
+}
+
+/* instructions */
+/* line 710, ../sass/style-workit.scss */
+.instructions .h4 {
+  margin-bottom: 20px;
+}
