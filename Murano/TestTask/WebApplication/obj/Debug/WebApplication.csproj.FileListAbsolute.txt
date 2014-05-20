@@ -2,6 +2,7 @@ C:\Work\github\workit\Murano\TestTask\WebApplication\bin\WebApplication.dll.conf
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\WebApplication.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\WebApplication.pdb
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Antlr3.Runtime.dll
+C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Dl.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\EntityFramework.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\EntityFramework.SqlServer.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.AspNet.Identity.Core.dll
@@ -47,6 +48,7 @@ C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.WebPages.Raz
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Xml.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Xml.Linq.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\WebGrease.dll
+C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Dl.pdb
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.Helpers.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.Mvc.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.Optimization.xml
@@ -70,5 +72,6 @@ C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.Owin.Security
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.Owin.Security.Google.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Work\github\workit\Murano\TestTask\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
 C:\Work\github\workit\Murano\TestTask\WebApplication\obj\Debug\WebApplication.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\obj\Debug\WebApplication.pdb
