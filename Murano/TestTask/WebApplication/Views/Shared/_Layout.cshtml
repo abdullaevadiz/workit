@@ -12,17 +12,10 @@
     @RenderSection("scripts", required: false)
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                @Html.ActionLink("Test task", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
+    <div class="container">
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="center">
             <p>&copy; @DateTime.Now.Year - Test task</p>
         </footer>
     </div>

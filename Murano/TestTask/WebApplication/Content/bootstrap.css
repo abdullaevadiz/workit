@@ -6814,3 +6814,6 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.center { text-align: center; }
+.hover { cursor: pointer; }

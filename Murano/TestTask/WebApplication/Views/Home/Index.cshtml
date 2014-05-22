@@ -1,33 +1,115 @@
-﻿@{
+﻿@using Dl.Classes
+@{
     ViewBag.Title = "Main";
-    var db = new Dl.CompanyContext();
-    var positions = db.Positions;
+    Layout = "../Shared/_Layout.cshtml";
+    
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+@section scripts
+{
+    <script src="~/ViewModels/EmployeesViewModel.js"></script>
+    <script type="text/javascript">
+        var params = {
+            positions: [],
+            pageNum: 1,
+            countPerPage : 5,
+            urls: {
+                getEmployeesByStatusAndPageNumUrl: "Employee/GetEmployeesByStatusAndPageNum",
+                getEmployeePositionsUrl: "Employee/GetEmployeePositions"
+            }
+        };
+
+        var vm = new EmployeesViewModel(params);
+        $(document).ready(function() {
+            ko.applyBindings(vm);
+        });
+    </script>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">Employees</div>
+    <div class="panel-body">
+        
+        <!-- filter -->
+        <div class="form-group">
+            <div class="text-primary">
+                Filter by status:
+            </div>
+            <fieldset>
+                <input type="radio" name="filter" id="rbAll" checked="checked" value="0"> <label for="rbAll">All</label>
+                <input type="radio" name="filter" id="rbActive" value="1"> <label for="rbActive">Active</label>
+                <input type="radio" name="filter" id="rbInactive" value="2"> <label for="rbInactive">Inactive</label>
+            </fieldset>
+        </div>
+        <!-- end filter -->
+        
+        <!-- progress bar -->
+        <div class="progress progress-striped active" data-bind="visible: progressBarIsView">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+        <!-- end progress bar -->
+        
+        <!-- list -->
+        <table class="table table-hover table-bordered table-striped" data-bind="visible: !progressBarIsView()">
+            <thead>
+                <tr>
+                    <th width="25%" class="center">Name</th>
+                    <th width="25%" class="center">Position</th>
+                    <th width="10%" class="center">Status</th>
+                    <th width="10%" class="center">Salary</th>
+                    <th width="10%" class="center">Tax</th>
+                    <th width="10%" class="center">After</th>
+                    <th width="10%" class="center">Actions</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: employees">
+
+                <!-- view row -->
+                <tr data-bind="visible: !viewEdit()">
+                    <td data-bind="text: Name"></td>
+                    <td data-bind="text: PositionName"></td>
+                    <td class="center" data-bind="text: (IsActive() ? 'Active' : 'Inactive')"></td>
+                    <td class="center" data-bind="text: Salary"></td>
+                    <td class="center" data-bind="text: (Tax() + '%' )"></td>
+                    <td class="center" data-bind="text: After"></td>
+                    <td class="center">
+                        <i class="glyphicon glyphicon-edit hover" title="edit" data-bind="click: $root.edit"></i>
+                        <i class="glyphicon glyphicon-remove hover" title="delete" data-bind="click: $root.delete"></i>
+                    </td>
+                </tr>
+                <!-- end view row -->
+                <!-- edit row -->
+                <tr class="center" data-bind="visible: viewEdit">
+                    <td>
+                        <input type="text" data-bind="value: Name" class="form-control"  />
+                    </td>
+                    <td>
+                        <select data-bind="options: $root.positions, value: PositionId, optionsText: 'Key', optionsValue : 'Id'" class="form-control"></select>
+                    </td>
+                    <td>
+                        <input type="checkbox" data-bind="checked: IsActive" />
+                    </td>
+                    <td colspan="3">
+                        <input type="text" data-bind="numeric: Salary, value: Salary" class="form-control" />
+                    </td>
+                    <td class="center">
+                        <i class="glyphicon glyphicon-floppy-disk hover" title="save" data-bind="click: $root.save"></i>
+                    </td>
+                </tr>
+                <!-- edit row -->
+
+            </tbody>
+        </table>
+        <!-- end list -->
+
+        <!-- actions -->
+        <hr />
+        <div class="center">
+            <button type="button" class="btn btn btn-primary">Add employee</button>
+            <button type="button" class="btn btn btn-info">Generate report</button>
+        </div>
+        <!-- end actions -->
+    
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div>
-        @foreach (var item in positions)
-        {
-            <div>
-                <span>@item.Id</span>
-                <span>@item.Key</span>
-            </div>
-        }
-    </div>
-   
-</div>
