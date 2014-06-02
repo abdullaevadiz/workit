@@ -10,6 +10,10 @@ namespace Dl
 {
     public class CompanyContext : DbContext
     {
+        public CompanyContext() : base("DefaultConnection")
+        {
+            var _ = typeof(System.Data.Entity.SqlServer.SqlProviderServices);
+        }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Employee> Employees { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

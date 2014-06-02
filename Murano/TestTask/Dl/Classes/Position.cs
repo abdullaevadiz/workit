@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dl.Classes
 {
-    [Table("Positions")] 
+    [Table("Positions")]
     public class Position
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

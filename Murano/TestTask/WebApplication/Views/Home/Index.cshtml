@@ -1,4 +1,5 @@
 ﻿@using Dl.Classes
+@using WebApplication.Helpers
 @{
     ViewBag.Title = "Main";
     Layout = "../Shared/_Layout.cshtml";
@@ -12,10 +13,13 @@
         var params = {
             positions: [],
             pageNum: 1,
-            countPerPage : 5,
+            countPerPage : 10,
             urls: {
-                getEmployeesByStatusAndPageNumUrl: "Employee/GetEmployeesByStatusAndPageNum",
-                getEmployeePositionsUrl: "Employee/GetEmployeePositions"
+                baseUrl : "@Urls.GetBaseUrl()",
+                getEmployeesByStatusAndPageNumUrl: "/Employee/GetEmployeesByStatusAndPageNum",
+                getEmployeePositionsUrl: "/Employee/GetEmployeePositions",
+                updateEmployeeUrl: "/Employee/UpdateEmployee",
+                createEmployeeUrl: "/Employee/CreateEmployee"
             }
         };
 
@@ -27,7 +31,9 @@
 }
 
 <div class="panel panel-default">
-    <div class="panel-heading">Employees</div>
+    <div class="panel-heading">
+        <a href="@Urls.GetBaseUrl()">Employees</a>
+    </div>
     <div class="panel-body">
         
         <!-- filter -->
@@ -36,9 +42,9 @@
                 Filter by status:
             </div>
             <fieldset>
-                <input type="radio" name="filter" id="rbAll" checked="checked" value="0"> <label for="rbAll">All</label>
-                <input type="radio" name="filter" id="rbActive" value="1"> <label for="rbActive">Active</label>
-                <input type="radio" name="filter" id="rbInactive" value="2"> <label for="rbInactive">Inactive</label>
+                <input type="radio" name="filter" id="rbAll" value="0" data-bind="checked: statusFilter"> <label for="rbAll">All</label>
+                <input type="radio" name="filter" id="rbActive" value="1" data-bind="checked: statusFilter"> <label for="rbActive">Active</label>
+                <input type="radio" name="filter" id="rbInactive" value="2" data-bind="checked: statusFilter"> <label for="rbInactive">Inactive</label>
             </fieldset>
         </div>
         <!-- end filter -->
@@ -50,7 +56,12 @@
         <!-- end progress bar -->
         
         <!-- list -->
-        <table class="table table-hover table-bordered table-striped" data-bind="visible: !progressBarIsView()">
+        
+        <!-- alert -->
+        <div data-bind="visible: error().length > 0, text: error" class="alert alert-warning"></div>
+        <!-- end alert -->
+
+        <table class="table table-hover table-bordered table-striped">
             <thead>
                 <tr>
                     <th width="25%" class="center">Name</th>
@@ -74,7 +85,6 @@
                     <td class="center" data-bind="text: After"></td>
                     <td class="center">
                         <i class="glyphicon glyphicon-edit hover" title="edit" data-bind="click: $root.edit"></i>
-                        <i class="glyphicon glyphicon-remove hover" title="delete" data-bind="click: $root.delete"></i>
                     </td>
                 </tr>
                 <!-- end view row -->
@@ -100,16 +110,70 @@
 
             </tbody>
         </table>
+        
+        <!-- pagination -->
+        <div data-bind="visible: pager().items().length > 1" class="center">
+            <ul class="pagination" data-bind="foreach: pager().items">
+                <li data-bind="css : cssClass">
+                    <a class="hover" data-bind="text: num, click: $root.changePage"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- end pagination -->
+
         <!-- end list -->
 
         <!-- actions -->
         <hr />
         <div class="center">
-            <button type="button" class="btn btn btn-primary">Add employee</button>
-            <button type="button" class="btn btn btn-info">Generate report</button>
+            <button type="button" class="btn btn btn-primary" data-bind="click: addEmployeeForm.viewForm">Add employee</button>
+            <a href="@Urls.GetBaseUrl()/Employee/GenerateReport"  class="btn btn btn-info">Generate report</a>
         </div>
         <!-- end actions -->
     
     </div>
 </div>
 
+<!-- -add new employee modal -->
+<div class="modal fade" id="addEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bind="click: addEmployeeForm.closeForm">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Add employee</h4>
+            </div>
+            <div class="modal-body">
+                <!-- alert -->
+                <div data-bind="visible: addEmployeeForm.error().length > 0, text: addEmployeeForm.error" class="alert alert-warning"></div>
+                <!-- end alert -->
+                
+                <!-- add employee form -->
+                <div>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Enter name" data-bind="value: addEmployeeForm.Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Position">Position</label>
+                        <select id="Position" data-bind="options: $root.positions, value: addEmployeeForm.PositionId, optionsText: 'Key', optionsValue : 'Id'" class="form-control"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Salary">Salary</label>
+                        <input type="text" id="Salary" class="form-control" data-bind="numeric: addEmployeeForm.Salary, value: addEmployeeForm.Salary" placeholder="Salary">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-bind="checked: addEmployeeForm.IsActive"> IsActive
+                        </label>
+                    </div>
+                </div>
+                <!-- end add employee form -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-bind="click: addEmployeeForm.closeForm">Close</button>
+                <button type="button" class="btn btn-primary" data-bind="click: addEmployee">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end -add new employee modal -->

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using Dl.Classes;
@@ -22,6 +24,7 @@ namespace WebApplication.Controllers
             }
             catch (Exception)
             {
+                //Todo: exception not logged
                 return JsonConvert.SerializeObject(new EmployeeListModel());
             }
 
@@ -78,6 +81,131 @@ namespace WebApplication.Controllers
                 var result = db.Positions.OrderBy(p => p.Key).ToList();
                 return JsonConvert.SerializeObject(result);
             }
+        }
+
+        [HttpPost]
+        public string UpdateEmployee(string jEmployee)
+        {
+            var errorResult = JsonConvert.SerializeObject(false);
+            Employee incomingEmployee;
+            try
+            {
+                incomingEmployee = JSonHelpers.DeserializeJSon<Employee>(jEmployee);
+            }
+            catch (Exception)
+            {
+                //Todo: exception not logged
+                return errorResult;
+            }
+
+            if (string.IsNullOrEmpty(incomingEmployee.Name))
+                return errorResult;
+
+            if (incomingEmployee.Salary < 0)
+                return errorResult;
+
+            using (var db = new Dl.CompanyContext())
+            {
+                var employee = db.Employees.FirstOrDefault(e => e.Id == incomingEmployee.Id);
+                if (employee == null)
+                    return errorResult;
+
+                var position = db.Positions.FirstOrDefault(p => p.Id == incomingEmployee.PositionId);
+                if (position == null)
+                    return errorResult;
+
+                employee.Name = incomingEmployee.Name;
+                employee.PositionId = incomingEmployee.PositionId;
+                employee.Salary = incomingEmployee.Salary;
+                employee.IsActive = incomingEmployee.IsActive;
+
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    //Todo: exception not logged
+                    return errorResult;
+                }
+            }
+            return JsonConvert.SerializeObject(true);
+        }
+
+        [HttpPost]
+        public string CreateEmployee(string jEmployee)
+        {
+            var errorResult = JsonConvert.SerializeObject(false);
+            Employee incomingEmployee;
+            try
+            {
+                incomingEmployee = JSonHelpers.DeserializeJSon<Employee>(jEmployee);
+            }
+            catch (Exception)
+            {
+                //Todo: exception not logged
+                return errorResult;
+            }
+
+            if (string.IsNullOrEmpty(incomingEmployee.Name))
+                return errorResult;
+
+            if (incomingEmployee.Salary < 0)
+                return errorResult;
+
+            using (var db = new Dl.CompanyContext())
+            {
+                var position = db.Positions.FirstOrDefault(p => p.Id == incomingEmployee.PositionId);
+                if (position == null)
+                    return errorResult;
+
+                var employee = new Employee
+                {
+                    Id = Guid.NewGuid(),
+                    Name = incomingEmployee.Name,
+                    PositionId = incomingEmployee.PositionId,
+                    IsActive = incomingEmployee.IsActive,
+                    Salary = incomingEmployee.Salary
+                };
+
+                try
+                {
+                    db.Employees.Add(employee);
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    //Todo: exception not logged
+                    return errorResult;
+                }
+            }
+            return JsonConvert.SerializeObject(true);
+        }
+
+        public ActionResult GenerateReport()
+        {
+            const string reportNameColumn = "Имя";
+            const string reportSalaryColumn = "Заработная плата";
+            const string reportTaxColumn = "Сумма налога на з/п";
+            const string reportTaxAfterSalaryColumn = "Заработная плата с вычетом налога";
+
+            var reportsLines = new List<string> { string.Format("{0, -30} | {1, -20} | {2, -20} | {3, -20}", reportNameColumn, reportSalaryColumn, reportTaxColumn, reportTaxAfterSalaryColumn) };
+            double salaries = 0;
+            double tax = 0;
+            double salariesAfterTax = 0;
+            using (var db = new Dl.CompanyContext())
+            {
+                var activeEmployees = db.Employees.Where(e => e.IsActive).OrderBy(e => e.Name);
+                foreach (var item in activeEmployees)
+                {
+                    salaries += item.Salary;
+                    salariesAfterTax += item.GetSalaryAfterTax();
+                    tax += item.GetTax();
+                    reportsLines.Add(string.Format("{0, -30} | {1, -20} | {2, -20} | {3, -20}", item.Name, item.Salary, item.GetTax(), item.GetSalaryAfterTax()));
+                }
+            }
+            reportsLines.Add(string.Format("{0, -30} | {1, -20} | {2, -20} | {3, -20}", "Итого", salaries, tax, salariesAfterTax));
+            return File(Encoding.UTF8.GetBytes(string.Join("\r\n", reportsLines)), "text/plain", "report.txt");
         }
     }
 }

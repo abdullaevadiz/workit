@@ -30,6 +30,7 @@ C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Drawing.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.EnterpriseServices.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Net.Http.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Net.Http.WebRequest.dll
+C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Runtime.Serialization.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.Abstractions.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.ApplicationServices.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.dll
@@ -49,6 +50,8 @@ C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Xml.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Xml.Linq.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\WebGrease.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Dl.pdb
+C:\Work\github\workit\Murano\TestTask\WebApplication\bin\EntityFramework.xml
+C:\Work\github\workit\Murano\TestTask\WebApplication\bin\EntityFramework.SqlServer.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Newtonsoft.Json.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.Helpers.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.Mvc.xml
@@ -58,8 +61,6 @@ C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.WebPages.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.WebPages.Deployment.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\System.Web.WebPages.Razor.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Antlr3.Runtime.pdb
-C:\Work\github\workit\Murano\TestTask\WebApplication\bin\EntityFramework.xml
-C:\Work\github\workit\Murano\TestTask\WebApplication\bin\EntityFramework.SqlServer.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml

@@ -2,6 +2,8 @@ C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\WebApplicat
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\WebApplication.Tests.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\WebApplication.Tests.pdb
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Dl.dll
+C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\EntityFramework.dll
+C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\EntityFramework.SqlServer.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.Helpers.dll
@@ -11,12 +13,13 @@ C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.WebPages.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\WebApplication.dll
-C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\EntityFramework.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.Optimization.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Owin.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Microsoft.Owin.dll
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Dl.pdb
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\WebApplication.pdb
+C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\EntityFramework.xml
+C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\EntityFramework.SqlServer.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.Helpers.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.Mvc.xml
@@ -24,7 +27,6 @@ C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\EntityFramework.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\System.Web.Optimization.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\bin\Debug\Microsoft.Owin.xml
 C:\Work\github\workit\Murano\TestTask\WebApplication.Tests\obj\Debug\WebApplication.Tests.csprojResolveAssemblyReference.cache
