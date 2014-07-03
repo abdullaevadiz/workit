@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'HelveticaNeueCyrThin';
+    src: url('helveticaneuecyr-thin.eot');
+    src: url('helveticaneuecyr-thin.eot') format('embedded-opentype'),
+         url('helveticaneuecyr-thin.woff') format('woff'),
+         url('helveticaneuecyr-thin.ttf') format('truetype'),
+         url('helveticaneuecyr-thin.svg#HelveticaNeueCyrThin') format('svg');
+}

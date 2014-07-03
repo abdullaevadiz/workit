@@ -1,0 +1,5 @@
+C:\Work\github\workit\richter\richter\first\bin\Debug\first.exe
+C:\Work\github\workit\richter\richter\first\bin\Debug\first.pdb
+C:\Work\github\workit\richter\richter\first\obj\Debug\first.csprojResolveAssemblyReference.cache
+C:\Work\github\workit\richter\richter\first\obj\Debug\first.exe
+C:\Work\github\workit\richter\richter\first\obj\Debug\first.pdb

@@ -1,0 +1,10 @@
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\Dl.dll.config
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\Dl.dll
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\Dl.pdb
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\EntityFramework.dll
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\EntityFramework.xml
+C:\Work\github\workit\Murano\TestTask\Dl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Work\github\workit\Murano\TestTask\Dl\obj\Debug\Dl.csprojResolveAssemblyReference.cache
+C:\Work\github\workit\Murano\TestTask\Dl\obj\Debug\Dl.dll
+C:\Work\github\workit\Murano\TestTask\Dl\obj\Debug\Dl.pdb

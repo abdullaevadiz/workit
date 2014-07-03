@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Catorze27Style1Medium';
+    src: url('catorze27style1-medium.eot');
+    src: url('catorze27style1-medium.eot') format('embedded-opentype'),
+         url('catorze27style1-medium.woff') format('woff'),
+         url('catorze27style1-medium.ttf') format('truetype'),
+         url('catorze27style1-medium.svg#Catorze27Style1Medium') format('svg');
+}
